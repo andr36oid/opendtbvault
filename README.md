@@ -22,20 +22,12 @@ git clone https://github.com/andr36oid/opendtbvault
 
 The board marking and system are what the person who shared the file wrote down. Some are wrong. The last two columns of `index.tsv` are our own check: we compared each file's screen start sequence and board wiring (reset and power pins, power chip, stick wiring, card slots) with the device trees of [andr36oid](https://github.com/andr36oid) and name the profile it matches.
 
-Things we found that way:
-
-- The file labelled `Y3506_V05_20251215` (rk3326-rg351mp-linux.dtb) is a genuine R36S Panel 2 tree, not a Y3506 board.
-- The two files labelled `R46H` are an R36S Plus tree and an R36S V30 type tree. Neither is an R46H.
-- `Y3506_V06_20260120 2604` has a new screen start sequence and runs its screen supply (LDO8) at 1.8 V. Every older Y3506 tree uses 3.3 V there. Do not use an older Y3506 device tree on a V06 board.
-
 A device tree for the wrong board can set a wrong voltage. Check the board marking printed on your mainboard before you use any of these.
 
 ## Where the files come from
 
-These are device trees the console makers shipped on their stock cards, and device trees from community systems (ArkOS, dArkOS RE, EmuELEC, ROCKNIX). They are compiled from Linux kernel sources under the GPL-2.0. Nothing here was written by us.
+These are device trees the console makers shipped on their stock cards, and device trees from community systems (ArkOS, dArkOS RE, EmuELEC, ROCKNIX). They are compiled from Linux kernel sources under the GPL-2.0.
 
 ## Add a file
 
 Open a pull request or an issue with the `.dtb`, the marking printed on the mainboard, and the system and card it came from.
-
-If a file is yours and you want it removed or credited differently, open an issue.
