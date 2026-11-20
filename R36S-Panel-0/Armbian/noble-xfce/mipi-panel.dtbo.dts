@@ -1,0 +1,56 @@
+/dts-v1/;
+
+/ {
+
+	fragment@0 {
+		target-path = "/";
+
+		__overlay__ {
+
+			dsi@ff450000 {
+
+				panel@0 {
+					compatible = "rocknix,generic-dsi";
+					panel_description = "G size=52,70 delays=2,1,20,120,20 format=rgb888 lanes=4 flags=0xe03\0M clock=50000 horizontal=640,450,46,450 vertical=480,17,5,13 default=1\0M clock=27650 horizontal=640,188,9,190 vertical=480,13,41,5\0M clock=25500 horizontal=640,188,2,190 vertical=480,13,2,5\0M clock=50010 horizontal=640,450,73,450 vertical=480,17,110,13\0M clock=50140 horizontal=640,450,60,450 vertical=480,17,35,13\0M clock=55870 horizontal=640,450,59,450 vertical=480,17,75,13\0M clock=50400 horizontal=640,450,77,450 vertical=480,17,10,13\0M clock=50310 horizontal=640,450,85,450 vertical=480,17,6,13\0M clock=54600 horizontal=640,450,94,450 vertical=480,17,46,13\0M clock=33520 horizontal=640,87,32,87 vertical=480,13,27,5\0M clock=36720 horizontal=640,87,2,87 vertical=480,13,2,5\0M clock=48960 horizontal=640,87,2,87 vertical=480,13,2,5\0I seq=b9f11283\0I seq=b1000000da80\0I seq=b2001370\0I seq=b31010282803ff00000000\0I seq=b480\0I seq=b50a0a\0I seq=b67f7f\0I seq=b82662f063\0I seq=ba338105f90e0e2000000000000000442500900a0000014f01000037\0I seq=bc47\0I seq=bf021100\0I seq=c0737350500000125000\0I seq=c153c0323277e1dddd77773333\0I seq=c68200bfff00ff\0I seq=c7b8000a000000\0I seq=c810401e02\0I seq=cc0b\0I seq=e000070d37353f4144060c0d0f111012141a00070d37353f4144060c0d0f111012141a\0I seq=e307070b0b0b0b00000000ff00c010\0I seq=e9c810020000b0b11131232880b0b127080004020000000004020000008888ba60240888888888888888ba713518888888888800000001000000000000000000\0I seq=ea970a820203070000000000008188ba17538888888888888088ba0642888888888888230000028000000000000000000000000000000000000000000000\0I seq=efffff01\0I seq=11 wait=200\0I seq=29 wait=50";
+					reset-gpios = <0xffffffff 0x10 0x01>;
+				};
+			};
+
+			pinctrl {
+
+				gpio-lcd {
+
+					lcd-rst {
+						rockchip,pins = <0x03 0x10 0x00 0xffffffff>;
+					};
+				};
+			};
+		};
+	};
+
+	fragment@1 {
+		target = <0xffffffff>;
+
+		__overlay__ {
+			invert-absx = <0x01>;
+			invert-absy = <0x01>;
+		};
+	};
+
+	fragment@2 {
+		target-path = "/";
+
+		__overlay__ {
+
+			adc-keys {
+				compatible = "deliberately-disabled-adc-keys";
+			};
+		};
+	};
+
+	__fixups__ {
+		gpio3 = "/fragment@0/__overlay__/dsi@ff450000/panel@0:reset-gpios:0";
+		pcfg_pull_none = "/fragment@0/__overlay__/pinctrl/gpio-lcd/lcd-rst:rockchip,pins:12";
+		joypad = "/fragment@1:target:0";
+	};
+};

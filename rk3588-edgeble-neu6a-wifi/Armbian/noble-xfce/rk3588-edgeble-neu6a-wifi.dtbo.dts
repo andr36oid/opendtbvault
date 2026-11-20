@@ -1,0 +1,98 @@
+/dts-v1/;
+
+/ {
+
+	fragment@0 {
+		target-path = "/";
+
+		__overlay__ {
+
+			vcc3v3-pcie2x1l1-regulator {
+				compatible = "regulator-fixed";
+				enable-active-high;
+				gpios = <0xffffffff 0x14 0x00>;
+				pinctrl-names = "default";
+				pinctrl-0 = <0x01>;
+				regulator-name = "vcc3v3_pcie2x1l1";
+				regulator-always-on;
+				regulator-boot-on;
+				regulator-min-microvolt = <0x325aa0>;
+				regulator-max-microvolt = <0x325aa0>;
+				startup-delay-us = <0xc350>;
+				vin-supply = <0xffffffff>;
+				phandle = <0x03>;
+			};
+		};
+	};
+
+	fragment@1 {
+		target = <0xffffffff>;
+
+		__overlay__ {
+			status = "okay";
+		};
+	};
+
+	fragment@2 {
+		target = <0xffffffff>;
+
+		__overlay__ {
+			pinctrl-names = "default";
+			pinctrl-0 = <0x02>;
+			reset-gpios = <0xffffffff 0x02 0x00>;
+			vpcie3v3-supply = <0x03>;
+			status = "okay";
+		};
+	};
+
+	fragment@3 {
+		target = <0xffffffff>;
+
+		__overlay__ {
+
+			pcie2 {
+
+				pcie2-1-rst {
+					rockchip,pins = <0x04 0x02 0x00 0xffffffff>;
+					phandle = <0x02>;
+				};
+
+				pcie2-1-vcc-en {
+					rockchip,pins = <0x00 0x14 0x00 0xffffffff>;
+					phandle = <0x01>;
+				};
+			};
+		};
+	};
+
+	__fixups__ {
+		gpio0 = "/fragment@0/__overlay__/vcc3v3-pcie2x1l1-regulator:gpios:0";
+		vcc5v0_sys = "/fragment@0/__overlay__/vcc3v3-pcie2x1l1-regulator:vin-supply:0";
+		combphy2_psu = "/fragment@1:target:0";
+		pcie2x1l1 = "/fragment@2:target:0";
+		gpio4 = "/fragment@2/__overlay__:reset-gpios:0";
+		pinctrl = "/fragment@3:target:0";
+		pcfg_pull_none = "/fragment@3/__overlay__/pcie2/pcie2-1-rst:rockchip,pins:12\0/fragment@3/__overlay__/pcie2/pcie2-1-vcc-en:rockchip,pins:12";
+	};
+
+	__local_fixups__ {
+
+		fragment@0 {
+
+			__overlay__ {
+
+				vcc3v3-pcie2x1l1-regulator {
+					pinctrl-0 = <0x00>;
+				};
+			};
+		};
+
+		fragment@2 {
+
+			__overlay__ {
+				pinctrl-0 = <0x00>;
+				vpcie3v3-supply = <0x00>;
+			};
+		};
+	};
+};

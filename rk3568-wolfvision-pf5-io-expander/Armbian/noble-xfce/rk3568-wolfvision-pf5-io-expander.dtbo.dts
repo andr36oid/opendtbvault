@@ -1,0 +1,223 @@
+/dts-v1/;
+
+/ {
+
+	fragment@0 {
+		target-path = "/";
+
+		__overlay__ {
+
+			external-gmac0-clock {
+				compatible = "fixed-clock";
+				clock-frequency = <0x2faf080>;
+				clock-output-names = "gmac0_clkin";
+				#clock-cells = <0x00>;
+				phandle = <0x04>;
+			};
+
+			usb-host-vbus-regulator {
+				compatible = "regulator-fixed";
+				enable-active-high;
+				gpio = <0xffffffff 0x03 0x00>;
+				pinctrl-names = "default";
+				pinctrl-0 = <0x01>;
+				regulator-name = "usb_host_vbus";
+				regulator-min-microvolt = <0x4c4b40>;
+				regulator-max-microvolt = <0x4c4b40>;
+				vin-supply = <0xffffffff>;
+				phandle = <0x09>;
+			};
+
+			vcc1v8-eth-regulator {
+				compatible = "regulator-fixed";
+				enable-active-high;
+				gpio = <0xffffffff 0x11 0x00>;
+				pinctrl-names = "default";
+				pinctrl-0 = <0x02>;
+				regulator-always-on;
+				regulator-boot-on;
+				regulator-name = "1v8_eth";
+				regulator-min-microvolt = <0x1b7740>;
+				regulator-max-microvolt = <0x1b7740>;
+				vin-supply = <0xffffffff>;
+			};
+
+			vcc3v3-eth-regulator {
+				compatible = "regulator-fixed";
+				gpio = <0xffffffff 0x10 0x01>;
+				pinctrl-names = "default";
+				pinctrl-0 = <0x03>;
+				regulator-always-on;
+				regulator-boot-on;
+				regulator-name = "3v3_eth";
+				regulator-min-microvolt = <0x325aa0>;
+				regulator-max-microvolt = <0x325aa0>;
+				vin-supply = <0xffffffff>;
+				phandle = <0x06>;
+			};
+		};
+	};
+
+	fragment@1 {
+		target = <0xffffffff>;
+
+		__overlay__ {
+			assigned-clocks = <0xffffffff 0x185 0xffffffff 0x182>;
+			assigned-clock-parents = <0xffffffff 0x184 0x04>;
+			clock_in_out = "input";
+			phy-handle = <0x05>;
+			phy-mode = "rmii";
+			phy-supply = <0x06>;
+			pinctrl-names = "default";
+			pinctrl-0 = <0xffffffff 0xffffffff 0xffffffff 0xffffffff 0xffffffff>;
+			status = "okay";
+		};
+	};
+
+	fragment@2 {
+		target = <0xffffffff>;
+
+		__overlay__ {
+			#address-cells = <0x01>;
+			#size-cells = <0x00>;
+
+			ethernet-phy@0 {
+				compatible = "ethernet-phy-ieee802.3-c22";
+				reg = <0x00>;
+				interrupt-parent = <0xffffffff>;
+				interrupts = <0x1b 0x02>;
+				pinctrl-names = "default";
+				pinctrl-0 = <0x07 0x08>;
+				reset-assert-us = <0x3e8>;
+				reset-deassert-us = <0x7d0>;
+				reset-gpios = <0xffffffff 0x1c 0x01>;
+				wakeup-source;
+				phandle = <0x05>;
+			};
+		};
+	};
+
+	fragment@3 {
+		target = <0xffffffff>;
+
+		__overlay__ {
+
+			ethernet {
+
+				eth-wake-intn-pinctrl {
+					rockchip,pins = <0x00 0x1b 0x00 0xffffffff>;
+					phandle = <0x07>;
+				};
+
+				eth-phy-rstn-pinctrl {
+					rockchip,pins = <0x00 0x1c 0x00 0xffffffff>;
+					phandle = <0x08>;
+				};
+
+				vcc1v8-eth-en-pinctrl {
+					rockchip,pins = <0x00 0x11 0x00 0xffffffff>;
+					phandle = <0x02>;
+				};
+
+				vcc3v3-eth-enn-pinctrl {
+					rockchip,pins = <0x00 0x10 0x00 0xffffffff>;
+					phandle = <0x03>;
+				};
+			};
+
+			usb {
+
+				usb-host-vbus-en-pinctrl {
+					rockchip,pins = <0x01 0x03 0x00 0xffffffff>;
+					phandle = <0x01>;
+				};
+			};
+		};
+	};
+
+	fragment@4 {
+		target = <0xffffffff>;
+
+		__overlay__ {
+			maximum-speed = "high-speed";
+			phys = <0xffffffff>;
+			phy-names = "usb2-phy";
+			status = "okay";
+		};
+	};
+
+	fragment@5 {
+		target = <0xffffffff>;
+
+		__overlay__ {
+			phy-supply = <0x09>;
+			status = "okay";
+		};
+	};
+
+	__fixups__ {
+		gpio1 = "/fragment@0/__overlay__/usb-host-vbus-regulator:gpio:0";
+		vcc5v_in = "/fragment@0/__overlay__/usb-host-vbus-regulator:vin-supply:0";
+		gpio0 = "/fragment@0/__overlay__/vcc1v8-eth-regulator:gpio:0\0/fragment@0/__overlay__/vcc3v3-eth-regulator:gpio:0\0/fragment@2/__overlay__/ethernet-phy@0:interrupt-parent:0\0/fragment@2/__overlay__/ethernet-phy@0:reset-gpios:0";
+		vcc3v3_sys = "/fragment@0/__overlay__/vcc1v8-eth-regulator:vin-supply:0\0/fragment@0/__overlay__/vcc3v3-eth-regulator:vin-supply:0";
+		gmac0 = "/fragment@1:target:0";
+		cru = "/fragment@1/__overlay__:assigned-clocks:0\0/fragment@1/__overlay__:assigned-clocks:8\0/fragment@1/__overlay__:assigned-clock-parents:0";
+		gmac0_miim = "/fragment@1/__overlay__:pinctrl-0:0";
+		gmac0_clkinout = "/fragment@1/__overlay__:pinctrl-0:4";
+		gmac0_rx_er = "/fragment@1/__overlay__:pinctrl-0:8";
+		gmac0_rx_bus2 = "/fragment@1/__overlay__:pinctrl-0:12";
+		gmac0_tx_bus2 = "/fragment@1/__overlay__:pinctrl-0:16";
+		mdio0 = "/fragment@2:target:0";
+		pinctrl = "/fragment@3:target:0";
+		pcfg_pull_none = "/fragment@3/__overlay__/ethernet/eth-wake-intn-pinctrl:rockchip,pins:12\0/fragment@3/__overlay__/ethernet/eth-phy-rstn-pinctrl:rockchip,pins:12\0/fragment@3/__overlay__/ethernet/vcc1v8-eth-en-pinctrl:rockchip,pins:12\0/fragment@3/__overlay__/ethernet/vcc3v3-eth-enn-pinctrl:rockchip,pins:12\0/fragment@3/__overlay__/usb/usb-host-vbus-en-pinctrl:rockchip,pins:12";
+		usb_host1_xhci = "/fragment@4:target:0";
+		usb2phy0_host = "/fragment@4/__overlay__:phys:0\0/fragment@5:target:0";
+	};
+
+	__local_fixups__ {
+
+		fragment@0 {
+
+			__overlay__ {
+
+				usb-host-vbus-regulator {
+					pinctrl-0 = <0x00>;
+				};
+
+				vcc1v8-eth-regulator {
+					pinctrl-0 = <0x00>;
+				};
+
+				vcc3v3-eth-regulator {
+					pinctrl-0 = <0x00>;
+				};
+			};
+		};
+
+		fragment@1 {
+
+			__overlay__ {
+				assigned-clock-parents = <0x08>;
+				phy-handle = <0x00>;
+				phy-supply = <0x00>;
+			};
+		};
+
+		fragment@2 {
+
+			__overlay__ {
+
+				ethernet-phy@0 {
+					pinctrl-0 = <0x00 0x04>;
+				};
+			};
+		};
+
+		fragment@5 {
+
+			__overlay__ {
+				phy-supply = <0x00>;
+			};
+		};
+	};
+};

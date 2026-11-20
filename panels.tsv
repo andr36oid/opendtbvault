@@ -1,0 +1,54 @@
+panel_init	init_len	resolution	panel_compatible	files	consoles	andr36oid_profile
+len370:abc2538808d7	370	640x480	sitronix,st7703 simple-panel-dsi	126	ANS11,clone-type2-G80CA,DC35V,G80C-MB-V1.1-Panel-8,G80CA-MB-V1.2-20250422-Panel-8,G80CA-MB-V1.2-20250423-Panel-8,+36 more	Devices/EE-G80-Panel8,Devices/OkRoll-Clone,Experimental/EE-K36-Panel1,Experimental/EE-V12-Var1-Panel8,Experimental/EE-V12-Var2,Experimental/Kinhank-K36,Experimental/OkRoll-Mux,Experimental/R36S-Y02-Y07,Experimental/XF35H
+len753:cb15584a55e1	753	640x480	elida,kd35t133 simple-panel-dsi	69	G80C-MB-V1.1-Panel-9,G80CA-MB-V1.2,G80CA-MB-V1.2-20250422-Panel-9,G80CA-MB-V1.2-20250423-Panel-9,K36,K36S,+12 more	Experimental/EE-G80-Panel9,Experimental/EE-K36-Panel4,Experimental/EE-V12-Var1-Panel3,Experimental/EE-V12-Var3-Panel3,Experimental/K36S,Experimental/R36T,Experimental/RX6H,rk3326-r36s-clone-k36-panel5
+len763:8443715c6738	763	640x480	elida,kd35t133 simple-panel-dsi	45	HL-R36H-V21,R36S-Panel-4-Type-2,R36S-Panel-4-V22,R36S-V21-2503,R36S-V21-2529,R36S-V21-2544,+13 more	Experimental/R36S-V21,Experimental/R36S-V21-2551-2552,Experimental/R36S-V22
+len370:9e7bb2a3445b	370	720x720	simple-panel-dsi	44	DC40V,Mini40,R36-Max,R36-Max-Type-1,R36-Max-Type-2,R36-Max-Type-3,+6 more	Experimental/R36-Max,Experimental/R36-Ultra,Experimental/S600,Experimental/XF40H,rk3326-r36s-clone-r36max-type2
+len773:a6cce3ac8d2f	773	640x480	elida,kd35t133 simple-panel-dsi	33	HL-R36H-V20,O30S,R36H,R36S-Panel-4,R36S-Panel-4-Type-1,R36S-V21-2537,+7 more	Experimental/R36S-V30-2603,Panels/Panel4
+len928:f260403c4edc	928	640x480	elida,kd35t133 simple-panel-dsi	32	HL-R46H-V22,R36S-Panel-0,R36S-Panel-1,R36S-Panel-2,R36S-Panel-3,R36S-Panel-4,+7 more	Experimental/R36S-V30,rk3326-r46h-v22-android
+len333:0bf3906a55ad	333	720x1280	sitronix,st7703 simple-panel-dsi	29	px30-evb-ddr3-v10,px30-evb-ddr3-v10-avb,px30-evb-ddr3-v10-linux,px30-evb-ddr4-v10,px30-evb-ext-rk618,px30-evb-ext-rk618-avb,+9 more	
+len755:d8a52c011334	755	640x480	elida,kd35t133 simple-panel-dsi	20	R36S-Panel-6,Soy-Sauce-Panel-4,Y3506-V03-20250317,Y3506-V04-2537,Y3506-V04-253x-Panel-6,Y3506-V04-2548	Experimental/KirbX-Clone,Experimental/Soy-Panel6,Panels/Panel6,rk3326-r36s-clone-soysauce-panel6-pmicfix,rk3326-r36s-clone-soysauce-v03
+len798:f31ef4f72905	798	1024x768	simple-panel-dsi	20	DC45V,H7,ODROID-GO2,R36-Max-2,R36-Ultra-X,RF45H,+3 more	Experimental/R36-Ultra-X,rk3326-r36s-clone-r36max2
+len843:ea90b15c2b44	843	1024x768	simple-panel-dsi	20	HL-R40PRO-MAX-V12,HL-R45H-V11,HL-R45H-V22,HL-R46H-V20,R36H-Pro-Max,R40XX,+3 more	Devices/R46H
+len370:b1037b8dea1f	370	640x480	elida,kd35t133 simple-panel-dsi	18	HL-R50S-V30,R33S,R35S,R35S-V11,R36S-Panel-0,RG351V,+2 more	Panels/Panel0,rk3326-r50s-v30-b-android
+len375:a13ac55d80e1	375	640x480	elida,kd35t133 simple-panel-dsi	17	R36S-Panel-4-Type-1,RK3326-image-default-files,Soy-Sauce-Panel-5,Y3506-V03-20241104,Y3506-V03-20241210,Y3506-v03-2507,+1 more	Experimental/R36S-Panel4-Type1,Experimental/Soy-Panel7,Experimental/Soy-Panel7-253x
+len323:eabbd1995483	323	640x480	elida,kd35t133 simple-panel-dsi	16	G350,R36S-Panel-5,Soy-Sauce-Panel-1,Y3506-V03-2509,Y3506-v03-2533,Y3506-V05-2551	Devices/G350,Experimental/Soy-Panel5,Experimental/Soy-Panel5-253x,Panels/Panel5
+len112:e033dc08540e	112	320x480	elida,kd35t133 simple-panel-dsi	13	ODROID-GO2,RGB10,RGB10S,RGBV10,rk3326-odroidgo2-linux,rk3326-odroidgo2-linux-v11,+1 more	
+len420:df22e664ca56	420	640x480	elida,kd35t133 simple-panel-dsi	10	Soy-Sauce-Panel-3,Y3506-V05-2551,Y3506-V05-2601	Experimental/Soy-V05-2551,Experimental/Soy-V05-2601
+len322:3e6668dd4b20	322	480x854	simple-panel-dsi	9	ODROID-GO3,R50S,RGB10-Max,RGB10-Max-1,RGB10-Max-2	Devices/R50S
+len928:fbafdb51bcfb	928	640x480	elida,kd35t133 simple-panel-dsi	9	R36S-Panel-0,R36S-Panel-1,R36S-Panel-2,R36S-Panel-3,R36S-Panel-4,R36S-Panel-4-V22,+3 more	
+len326:b8f80ba146c1	326	720x720	elida,kd35t133 simple-panel-dsi	8	R36S-Plus,R36S-Plus-V20,R36S-Plus-V20-2551	Panels/R36S-Plus
+len768:3e1b8196c1ff	768	720x720	sitronix,st7703 simple-panel-dsi	8	ANS13,R39-Max,T16-Max,T16-Max-S600	Experimental/R39-Max,Experimental/T16-Max
+len8:8959e0a10c6c	8	640x480	elida,kd35t133 simple-panel-dsi	7	Soy-Sauce-Panel-2,soy-sauce-v04,Y3506-V04-2548,Y3506-V04-2548-Panel-2,Y3506-V05-2601	Experimental/Soy-V04-Panel2,Experimental/Soy-V05-Panel2
+len614:f7ce1f89e2da	614	480x800	simple-panel-dsi	6	U8,U8-Panel-1	
+len933:0632f23b0065	933	640x480	elida,kd35t133 simple-panel-dsi	6	R36S-Panel-2	Panels/Panel2
+len299:a42642c10bd6	299	640x480	elida,kd35t133 simple-panel-dsi	5	R36S-Panel-1	Panels/Panel1
+len316:a65af1477ed5	316	480x640	sitronix,st7703 simple-panel-dsi	5	D28S,DR28S	Devices/D-28S
+len816:ce000ad21b3f	816	720x1280	simple-panel-dsi	5	HL-R50H-V11-2617,R50H	rk3326-r50h-android
+len843:e71b8ef9dcc5	843	1024x768	elida,kd35t133 simple-panel-dsi	5	HL-R36H-ProMax-V20,HL-R45H-V20,R45H	Devices/R45H
+len938:da5748ca44e5	938	640x480	elida,kd35t133 simple-panel-dsi	5	R36S-Panel-3	Experimental/R36S-Panel3-Alt
+len34:7bcc332251f2	34	640x480	simple-panel-dsi	4	A10-Mini	
+len375:0cb7879a2d81	375	640x480	sitronix,st7703 simple-panel-dsi	4	R36S-V12-Variant-3-Panel-A	Experimental/EE-V12-Var3-PanelA
+len868:db5c8cd5bb96	868	800x1280	pvo,p101nwwbp-01g simple-panel-dsi	4	px30-ad-r35-mb-rk618-dual-lvds,px30-ad-r35-mb-rk618-hdmi,px30-ad-r35-mb-rk618-hdmi-lvds,px30-ad-r35-mb-rk618-lvds	
+len120:37832c1fd4fd	120	320x480	simple-panel-dsi	3	RG351P	
+len130:81c3f7348995	130	720x540	simple-panel-dsi	3	A10-Mini,A10-Mini-V4	
+len164:594f7e3cfba8	164	480x800	simple-panel-dsi	3	R40S	rk3326-r40s-android
+len370:0c7df7fc2e3a	370	640x480	simple-panel-dsi	3	R36S-clone-type-1-Panel-6	rk3326-r36s-clone-k36-panel6
+len370:c91bbb1fde17	370	640x480	simple-panel-dsi	3	G350	
+len375:a00bd8c7ed08	375	640x480	simple-panel-dsi	3	R36S-clone-type-1-Panel-4	rk3326-r36s-clone-k36-panel4-alt
+len758:3bf9337f28b7	758	640x480	simple-panel-dsi	3	R36S-clone-type-1-Panel-3	rk3326-r36s-clone-k36-panel3
+len923:225ce2f8eb6a	923	640x480	elida,kd35t133 simple-panel-dsi	3	RG353M,RG353P,RG353V	
+len923:e7f072ac603d	923	640x480	elida,kd35t133 simple-panel-dsi	3	HL-R50S-V30	rk3326-r50s-v30-android
+len323:008c76c3fded	323	640x480	simple-panel-dsi	2	RP1	
+len346:4f959c63fdb2	346	480x800	sitronix,st7703 simple-panel-dsi	2	Project-X-Pro	
+len346:f8434f0a5c86	346	480x640	elida,kd35t133 simple-panel-dsi	2	RG-ARC-SD,RG403V	
+len375:3a86f063c495	375	720x1280	simple-panel-dsi	2	RF55H	
+len45:4442c4065852	45	1200x1920	simple-panel-dsi	2	rk3399-tve1030g,rk3399-tve1030g-avb	
+len604:073a925b1eb7	604	480x800	simple-panel-dsi	2	U8-Panel-2	
+len753:6bed5ff66013	753	640x480	simple-panel-dsi	2	D007	
+len898:bc63104ab4a3	898	480x640	simple-panel-dsi	2	XF28	
+len8:6821e5493c30	8	720x720	simple-panel-dsi	2	T16-Max	
+len8:d0ecb03b9caa	8	800x1280	aoly,sl008pa21y1285-b00 simple-panel-dsi	2	rk3326-863-lp3-v10,rk3326-863-lp3-v10-avb	
+len322:b4379a01e298	322	480x854	elida,kd50t048a simple-panel-dsi	1	ODROID-GO3	
+len375:43076e134b5d	375	640x480	elida,kd35t133 simple-panel-dsi	1	Y3506-V06-2604	
+len79:48d70bf3c4ae	79	1200x1920	simple-panel-dsi	1	px30-z7-a0-rk618-dsi	
+len948:afc0d8d1cce4	948	640x480	elida,kd35t133 simple-panel-dsi	1	R36S-Panel-3	Panels/Panel3

@@ -1,0 +1,197 @@
+/dts-v1/;
+
+/ {
+
+	fragment@0 {
+		target-path = "/";
+
+		__overlay__ {
+
+			backlight {
+				compatible = "pwm-backlight";
+				brightness-levels = <0x00 0xff>;
+				default-brightness-level = <0xff>;
+				num-interpolated-steps = <0xff>;
+				power-supply = <0xffffffff>;
+				pwms = <0xffffffff 0x00 0xf4240 0x00>;
+				phandle = <0x02>;
+			};
+
+			spi {
+				compatible = "spi-gpio";
+				#address-cells = <0x01>;
+				#size-cells = <0x00>;
+				cs-gpios = <0xffffffff 0x02 0x01>;
+				miso-gpios = <0xffffffff 0x01 0x00>;
+				mosi-gpios = <0xffffffff 0x0a 0x00>;
+				num-chipselects = <0x01>;
+				pinctrl-names = "default";
+				pinctrl-0 = <0x01>;
+				sck-gpios = <0xffffffff 0x09 0x00>;
+
+				panel@0 {
+					compatible = "jasonic,jt240mhqs-hwt-ek-e3\0sitronix,st7789v";
+					reg = <0x00>;
+					assigned-clocks = <0xffffffff 0x05>;
+					assigned-clock-rates = <0x29b92700>;
+					backlight = <0x02>;
+					pinctrl-names = "default";
+					pinctrl-0 = <0xffffffff 0xffffffff 0x03>;
+					power-supply = <0xffffffff>;
+					reset-gpios = <0xffffffff 0x14 0x01>;
+					spi-max-frequency = <0x186a0>;
+					rotation = <0x10e>;
+
+					port {
+
+						endpoint {
+							remote-endpoint = <0x04>;
+							phandle = <0x07>;
+						};
+					};
+				};
+			};
+		};
+	};
+
+	fragment@1 {
+		target = <0xffffffff>;
+
+		__overlay__ {
+			#address-cells = <0x01>;
+			#size-cells = <0x00>;
+			status = "okay";
+
+			touchscreen@55 {
+				compatible = "sitronix,st1624\0sitronix,st1633";
+				reg = <0x55>;
+				interrupt-parent = <0xffffffff>;
+				interrupts = <0x0d 0x02>;
+				gpios = <0xffffffff 0x05 0x01>;
+				pinctrl-names = "default";
+				pinctrl-0 = <0x05 0x06>;
+				wakeup-source;
+			};
+		};
+	};
+
+	fragment@2 {
+		target = <0xffffffff>;
+
+		__overlay__ {
+
+			display-pinctrl {
+
+				lcd-rstn-pinctrl {
+					rockchip,pins = <0x03 0x14 0x00 0xffffffff>;
+					phandle = <0x03>;
+				};
+
+				lcd-spi-pinctrl {
+					rockchip,pins = <0x03 0x01 0x00 0xffffffff 0x03 0x02 0x00 0xffffffff 0x03 0x09 0x00 0xffffffff 0x03 0x0a 0x00 0xffffffff>;
+					phandle = <0x01>;
+				};
+			};
+
+			touchscreen-pinctrl {
+
+				touch-int-pinctrl {
+					rockchip,pins = <0x00 0x0d 0x00 0xffffffff>;
+					phandle = <0x05>;
+				};
+
+				touch-rstn-pinctrl {
+					rockchip,pins = <0x00 0x05 0x00 0xffffffff>;
+					phandle = <0x06>;
+				};
+			};
+		};
+	};
+
+	fragment@3 {
+		target = <0xffffffff>;
+
+		__overlay__ {
+			pinctrl-names = "default";
+			pinctrl-0 = <0xffffffff>;
+			status = "okay";
+		};
+	};
+
+	fragment@4 {
+		target = <0xffffffff>;
+
+		__overlay__ {
+			#address-cells = <0x01>;
+			#size-cells = <0x00>;
+
+			endpoint@1 {
+				reg = <0x01>;
+				remote-endpoint = <0x07>;
+				phandle = <0x04>;
+			};
+		};
+	};
+
+	__fixups__ {
+		vcc3v3_sd = "/fragment@0/__overlay__/backlight:power-supply:0";
+		pwm10 = "/fragment@0/__overlay__/backlight:pwms:0\0/fragment@3:target:0";
+		gpio3 = "/fragment@0/__overlay__/spi:cs-gpios:0\0/fragment@0/__overlay__/spi:miso-gpios:0\0/fragment@0/__overlay__/spi:mosi-gpios:0\0/fragment@0/__overlay__/spi:sck-gpios:0\0/fragment@0/__overlay__/spi/panel@0:reset-gpios:0";
+		cru = "/fragment@0/__overlay__/spi/panel@0:assigned-clocks:0";
+		lcdc_clock = "/fragment@0/__overlay__/spi/panel@0:pinctrl-0:0";
+		lcdc_data18 = "/fragment@0/__overlay__/spi/panel@0:pinctrl-0:4";
+		vcc3v3_sw = "/fragment@0/__overlay__/spi/panel@0:power-supply:0";
+		i2c1 = "/fragment@1:target:0";
+		gpio0 = "/fragment@1/__overlay__/touchscreen@55:interrupt-parent:0\0/fragment@1/__overlay__/touchscreen@55:gpios:0";
+		pinctrl = "/fragment@2:target:0";
+		pcfg_pull_none = "/fragment@2/__overlay__/display-pinctrl/lcd-rstn-pinctrl:rockchip,pins:12\0/fragment@2/__overlay__/display-pinctrl/lcd-spi-pinctrl:rockchip,pins:12\0/fragment@2/__overlay__/display-pinctrl/lcd-spi-pinctrl:rockchip,pins:28\0/fragment@2/__overlay__/display-pinctrl/lcd-spi-pinctrl:rockchip,pins:44\0/fragment@2/__overlay__/display-pinctrl/lcd-spi-pinctrl:rockchip,pins:60\0/fragment@2/__overlay__/touchscreen-pinctrl/touch-rstn-pinctrl:rockchip,pins:12";
+		pcfg_pull_up = "/fragment@2/__overlay__/touchscreen-pinctrl/touch-int-pinctrl:rockchip,pins:12";
+		pwm10m1_pins = "/fragment@3/__overlay__:pinctrl-0:0";
+		vp2 = "/fragment@4:target:0";
+	};
+
+	__local_fixups__ {
+
+		fragment@0 {
+
+			__overlay__ {
+
+				spi {
+					pinctrl-0 = <0x00>;
+
+					panel@0 {
+						backlight = <0x00>;
+						pinctrl-0 = <0x08>;
+
+						port {
+
+							endpoint {
+								remote-endpoint = <0x00>;
+							};
+						};
+					};
+				};
+			};
+		};
+
+		fragment@1 {
+
+			__overlay__ {
+
+				touchscreen@55 {
+					pinctrl-0 = <0x00 0x04>;
+				};
+			};
+		};
+
+		fragment@4 {
+
+			__overlay__ {
+
+				endpoint@1 {
+					remote-endpoint = <0x00>;
+				};
+			};
+		};
+	};
+};

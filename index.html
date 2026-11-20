@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Browse - opendtbvault</title>
+<meta name="description" content="Open device tree archive for RK3326 and RK3566 handheld consoles. No account, no download limits.">
+<link rel="stylesheet" href="site/style.css">
+<script>try{var t=localStorage.getItem('theme');if(t==='dark'||(!t&&matchMedia('(prefers-color-scheme: dark)').matches))document.documentElement.classList.add('dark')}catch(e){}</script>
+</head>
+<body>
+<a href="#main" class="skip">Skip to main content</a>
+<header class="top">
+  <div class="wrap bar">
+    <a class="brand" href="#/browse"><span class="logo">DT</span><span>opendtbvault</span></a>
+    <nav class="nav" id="nav">
+      <a href="#/browse" data-v="browse">Browse</a>
+      <a href="#/consoles" data-v="consoles">Consoles</a>
+      <a href="#/panels" data-v="panels">Panels</a>
+      <a href="SOURCES.md">Sources</a>
+    </nav>
+    <span class="grow"></span>
+    <button class="btn ghost icon" id="theme" type="button" aria-label="Switch light and dark theme">&#9680;</button>
+  </div>
+</header>
+<main id="main" class="wrap">
+  <section id="v-browse" class="view">
+    <div class="head">
+      <h1>Browse the archive</h1>
+      <p class="muted" id="sub">Device trees for handheld consoles, free to download, no account needed.</p>
+    </div>
+    <div class="filters card">
+      <input id="q" type="search" placeholder="Search console, board marking, file name, panel, SHA-256" aria-label="Search">
+      <div class="row">
+        <label>Console<select id="f-console"><option value="">All consoles</option></select></label>
+        <label>SoC<select id="f-soc"><option value="">All SoCs</option></select></label>
+        <label>System<select id="f-os"><option value="">All systems</option></select></label>
+        <label>Type<select id="f-type"><option value="">All types</option></select></label>
+        <label>Source<select id="f-group"><option value="">All sources</option></select></label>
+        <label>Sort<select id="f-sort">
+          <option value="console">Console</option>
+          <option value="name">File name</option>
+          <option value="size">Size, largest first</option>
+          <option value="sizeasc">Size, smallest first</option>
+        </select></label>
+        <label class="check"><input type="checkbox" id="f-dups"> Show byte-identical copies</label>
+      </div>
+    </div>
+    <p class="count muted" id="count"></p>
+    <div class="grid" id="grid"></div>
+    <div class="pager" id="pager"></div>
+  </section>
+
+  <section id="v-file" class="view" hidden></section>
+
+  <section id="v-consoles" class="view" hidden>
+    <div class="head"><h1>Consoles</h1><p class="muted">One line per console folder. Click a name to see its files.</p></div>
+    <input id="qc" type="search" placeholder="Filter consoles" aria-label="Filter consoles" class="wide">
+    <div class="tablewrap card"><table id="t-consoles"></table></div>
+  </section>
+
+  <section id="v-panels" class="view" hidden>
+    <div class="head"><h1>Panels</h1><p class="muted">One line per screen start sequence (panel init). Files with the same init drive the same screen the same way.</p></div>
+    <div class="tablewrap card"><table id="t-panels"></table></div>
+  </section>
+</main>
+<footer class="foot">
+  <div class="wrap">
+    <div><b>opendtbvault</b><p class="muted">Public device tree archive for handheld consoles. Hosted on GitHub, no account, no download limits.</p></div>
+    <div class="links"><a href="README.md">About</a><a href="SOURCES.md">Sources</a><a href="index.tsv">index.tsv</a><a href="panels.tsv">panels.tsv</a><a href="consoles.tsv">consoles.tsv</a><a href="SHA256SUMS">SHA256SUMS</a></div>
+  </div>
+</footer>
+<script src="site/app.js"></script>
+</body>
+</html>

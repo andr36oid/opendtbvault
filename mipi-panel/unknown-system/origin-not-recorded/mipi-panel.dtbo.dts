@@ -1,0 +1,72 @@
+/dts-v1/;
+
+/ {
+
+	fragment@0 {
+		target-path = "/";
+
+		__overlay__ {
+
+			dsi@ff450000 {
+
+				panel@0 {
+					compatible = "rocknix,generic-dsi";
+					panel_description = "G size=52,70 delays=2,1,20,120,20 format=rgb888 lanes=4 flags=0xe03\0M clock=26400 horizontal=640,119,2,119 vertical=480,13,2,5 default=1\0M clock=27300 horizontal=640,207,24,207 vertical=480,13,9,5\0M clock=26400 horizontal=640,207,2,207 vertical=480,13,2,5\0M clock=27140 horizontal=640,119,45,119 vertical=480,13,90,5\0M clock=26450 horizontal=640,119,42,119 vertical=480,13,2,5\0M clock=28520 horizontal=640,119,3,119 vertical=480,13,44,5\0M clock=31440 horizontal=640,119,39,119 vertical=480,13,74,5\0M clock=26440 horizontal=640,31,30,31 vertical=480,13,103,5\0M clock=31970 horizontal=640,31,36,31 vertical=480,13,76,5\0M clock=31680 horizontal=640,31,2,31 vertical=480,13,2,5\0M clock=42240 horizontal=640,31,2,31 vertical=480,13,2,5\0I seq=ff30\0I seq=ff52\0I seq=ff01\0I seq=e300\0I seq=400a\0I seq=0340\0I seq=0400\0I seq=0503\0I seq=2412\0I seq=251e\0I seq=2628\0I seq=2752\0I seq=2857\0I seq=2901\0I seq=2adf\0I seq=389c\0I seq=39a7\0I seq=3a53\0I seq=4400\0I seq=493c\0I seq=59fe\0I seq=5c00\0I seq=9177\0I seq=9277\0I seq=a055\0I seq=a150\0I seq=a49c\0I seq=a702\0I seq=a801\0I seq=a901\0I seq=aafc\0I seq=ab28\0I seq=ac06\0I seq=ad06\0I seq=ae06\0I seq=af03\0I seq=b008\0I seq=b126\0I seq=b228\0I seq=b328\0I seq=b433\0I seq=b508\0I seq=b626\0I seq=b708\0I seq=b826\0I seq=ff30\0I seq=ff52\0I seq=ff02\0I seq=b00b\0I seq=b116\0I seq=b217\0I seq=b32c\0I seq=b432\0I seq=b53b\0I seq=b629\0I seq=b740\0I seq=b80d\0I seq=b905\0I seq=ba12\0I seq=bb10\0I seq=bc12\0I seq=bd15\0I seq=be19\0I seq=bf0e\0I seq=c016\0I seq=c10a\0I seq=d00c\0I seq=d117\0I seq=d214\0I seq=d32e\0I seq=d432\0I seq=d53c\0I seq=d622\0I seq=d73d\0I seq=d80d\0I seq=d907\0I seq=da13\0I seq=db13\0I seq=dc11\0I seq=dd15\0I seq=de19\0I seq=df10\0I seq=e017\0I seq=e10a\0I seq=ff30\0I seq=ff52\0I seq=ff03\0I seq=002a\0I seq=012a\0I seq=022a\0I seq=032a\0I seq=0461\0I seq=0580\0I seq=06c7\0I seq=0701\0I seq=0882\0I seq=0983\0I seq=302a\0I seq=312a\0I seq=322a\0I seq=332a\0I seq=3461\0I seq=35c5\0I seq=3680\0I seq=3723\0I seq=4082\0I seq=4183\0I seq=4280\0I seq=4381\0I seq=4411\0I seq=45e6\0I seq=46e5\0I seq=4711\0I seq=48e8\0I seq=49e7\0I seq=5002\0I seq=5101\0I seq=5204\0I seq=5303\0I seq=5411\0I seq=55ea\0I seq=56e9\0I seq=5711\0I seq=58ec\0I seq=59eb\0I seq=7e02\0I seq=7f80\0I seq=e05a\0I seq=b100\0I seq=b40e\0I seq=b50f\0I seq=b604\0I seq=b707\0I seq=b806\0I seq=b905\0I seq=ba0f\0I seq=c700\0I seq=ca0e\0I seq=cb0f\0I seq=cc04\0I seq=cd07\0I seq=ce06\0I seq=cf05\0I seq=d00f\0I seq=810f\0I seq=840e\0I seq=850f\0I seq=8607\0I seq=8704\0I seq=8805\0I seq=8906\0I seq=8a00\0I seq=970f\0I seq=9a0e\0I seq=9b0f\0I seq=9c07\0I seq=9d04\0I seq=9e05\0I seq=9f06\0I seq=a000\0I seq=ff30\0I seq=ff52\0I seq=ff02\0I seq=0101\0I seq=02da\0I seq=03ba\0I seq=04a8\0I seq=059a\0I seq=0670\0I seq=07ff\0I seq=0891\0I seq=0990\0I seq=0aff\0I seq=0b8f\0I seq=0c60\0I seq=0d58\0I seq=0e48\0I seq=0f38\0I seq=102b\0I seq=ff30\0I seq=ff52\0I seq=ff00\0I seq=3602\0I seq=3a70\0I seq=11 wait=200\0I seq=29 wait=10";
+					reset-gpios = <0xffffffff 0x10 0x01>;
+				};
+			};
+
+			pinctrl {
+
+				gpio-lcd {
+
+					lcd-rst {
+						rockchip,pins = <0x03 0x10 0x00 0xffffffff>;
+					};
+				};
+			};
+		};
+	};
+
+	fragment@1 {
+		target-path = "/";
+
+		__overlay__ {
+
+			adc-keys {
+				dtbo_comment = "deliberately-disabled-adc-keys";
+				status = "disabled";
+			};
+		};
+	};
+
+	fragment@2 {
+		target = <0xffffffff>;
+
+		__overlay__ {
+			compatible = "rocknix-joypad";
+			io-channel-names = "key-RY\0key-RX\0key-LY\0key-LX";
+			io-channels = <0xffffffff 0x03 0xffffffff 0x03 0xffffffff 0x02 0xffffffff 0x01>;
+			button-adc-scale = <0x02>;
+			button-adc-deadzone = <0xd8>;
+			button-adc-fuzz = <0x36>;
+			button-adc-flat = <0x36>;
+			abs_x-p-tuning = <0xb4>;
+			abs_x-n-tuning = <0xb4>;
+			abs_y-p-tuning = <0xb4>;
+			abs_y-n-tuning = <0xb4>;
+			abs_rx-p-tuning = <0x00>;
+			abs_rx-n-tuning = <0x00>;
+			abs_ry-p-tuning = <0x00>;
+			abs_ry-n-tuning = <0x00>;
+			poll-interval = <0x0a>;
+		};
+	};
+
+	__fixups__ {
+		gpio3 = "/fragment@0/__overlay__/dsi@ff450000/panel@0:reset-gpios:0";
+		pcfg_pull_none = "/fragment@0/__overlay__/pinctrl/gpio-lcd/lcd-rst:rockchip,pins:12";
+		joypad = "/fragment@2:target:0";
+		saradc = "/fragment@2/__overlay__:io-channels:0\0/fragment@2/__overlay__:io-channels:8\0/fragment@2/__overlay__:io-channels:16\0/fragment@2/__overlay__:io-channels:24";
+	};
+};

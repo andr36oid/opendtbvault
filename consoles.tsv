@@ -1,0 +1,489 @@
+folder	aliases	board_marking	panel_init	resolution	pmic	os_folders	andr36oid_profile
+A10-Mini	a10mini		len34:7bcc332251f2	640x480	rk817	dArkOS,dArkOS-arkos4clone	
+A10-Mini-V4	a10miniv4		len130:81c3f7348995	720x540	rk817	dArkOS-arkos4clone	
+ANS11			len370:abc2538808d7	640x480	rk817	stock	Devices/EE-G80-Panel8,Devices/OkRoll-Clone,Experimental/EE-K36-Panel1,Experimental/EE-V12-Var1-Panel8,Experimental/EE-V12-Var2,Experimental/Kinhank-K36,Experimental/OkRoll-Mux,Experimental/R36S-Y02-Y07,Experimental/XF35H
+ANS13			len768:3e1b8196c1ff	720x720	rk817	stock	Experimental/R39-Max,Experimental/T16-Max
+c1p8						unknown-system	
+clone-type2-G80CA			len370:abc2538808d7	640x480	rk817	andr36oid-community	Devices/EE-G80-Panel8,Devices/OkRoll-Clone,Experimental/EE-K36-Panel1,Experimental/EE-V12-Var1-Panel8,Experimental/EE-V12-Var2,Experimental/Kinhank-K36,Experimental/OkRoll-Mux,Experimental/R36S-Y02-Y07,Experimental/XF35H
+D007	d007		len753:6bed5ff66013	640x480	rk817	dArkOS-arkos4clone	
+D28S			len316:a65af1477ed5	480x640	rk817	andr36oid,Refresh-Rate-Fix-by-mcasoo,stock	Devices/D-28S
+DC35V	dc35v		len370:abc2538808d7	640x480	rk817	dArkOS-arkos4clone	Devices/EE-G80-Panel8,Devices/OkRoll-Clone,Experimental/EE-K36-Panel1,Experimental/EE-V12-Var1-Panel8,Experimental/EE-V12-Var2,Experimental/Kinhank-K36,Experimental/OkRoll-Mux,Experimental/R36S-Y02-Y07,Experimental/XF35H
+DC40V	dc40v		len370:9e7bb2a3445b	720x720	rk817	dArkOS-arkos4clone	Experimental/R36-Max,Experimental/R36-Ultra,Experimental/S600,Experimental/XF40H,rk3326-r36s-clone-r36max-type2
+DC45V	dc45v		len798:f31ef4f72905	1024x768	rk817	dArkOS-arkos4clone	Experimental/R36-Ultra-X,rk3326-r36s-clone-r36max2
+DR28S	dr28s		len316:a65af1477ed5	480x640	rk817	dArkOS-arkos4clone	Devices/D-28S
+fdt					rk817	ROCKNIX	
+G30					rk817	stock	
+G350	g350		len370:c91bbb1fde17	640x480	rk817	andr36oid,andr36oid-community,dArkOS,dArkOS-arkos4clone	Devices/G350
+G80C-MB-V1.1-Panel-8	G80C-MB V1.1-20250319 Panel 8	G80C-MB V1.1-20250319 Panel 8	len370:abc2538808d7	640x480	rk817	andr36oid,dArkOSen,dArkOSRE	Devices/EE-G80-Panel8
+G80C-MB-V1.1-Panel-9	G80C-MB V1.1-20250319 Panel 9	G80C-MB V1.1-20250319 Panel 9	len753:cb15584a55e1	640x480	rk817	dArkOSen,dArkOSRE	Experimental/EE-G80-Panel9,Experimental/EE-K36-Panel4,Experimental/EE-V12-Var1-Panel3,Experimental/EE-V12-Var3-Panel3,Experimental/K36S,Experimental/R36T,Experimental/RX6H,rk3326-r36s-clone-k36-panel5
+G80CA-MB-V1.2	G80CA-MB V1.2-20250422		len753:cb15584a55e1	640x480	rk817	andr36oid,stock	Experimental/EE-G80-Panel9
+G80CA-MB-V1.2-20250422-Panel-8		G80CA-MB V1.2-20250422 Panel 8	len370:abc2538808d7	640x480	rk817	dArkOSen,dArkOSRE	Devices/EE-G80-Panel8,Devices/OkRoll-Clone,Experimental/EE-K36-Panel1,Experimental/EE-V12-Var1-Panel8,Experimental/EE-V12-Var2,Experimental/Kinhank-K36,Experimental/OkRoll-Mux,Experimental/R36S-Y02-Y07,Experimental/XF35H
+G80CA-MB-V1.2-20250422-Panel-9		G80CA-MB V1.2-20250422 Panel 9	len753:cb15584a55e1	640x480	rk817	dArkOSen,dArkOSRE	Experimental/EE-G80-Panel9,Experimental/EE-K36-Panel4,Experimental/EE-V12-Var1-Panel3,Experimental/EE-V12-Var3-Panel3,Experimental/K36S,Experimental/R36T,Experimental/RX6H,rk3326-r36s-clone-k36-panel5
+G80CA-MB-V1.2-20250423-Panel-8		G80CA-MB V1.2-20250423 Panel 8	len370:abc2538808d7	640x480	rk817	dArkOSen,dArkOSRE	Devices/EE-G80-Panel8,Devices/OkRoll-Clone,Experimental/EE-K36-Panel1,Experimental/EE-V12-Var1-Panel8,Experimental/EE-V12-Var2,Experimental/Kinhank-K36,Experimental/OkRoll-Mux,Experimental/R36S-Y02-Y07,Experimental/XF35H
+G80CA-MB-V1.2-20250423-Panel-9		G80CA-MB V1.2-20250423 Panel 9	len753:cb15584a55e1	640x480	rk817	dArkOSen,dArkOSRE	Experimental/EE-G80-Panel9,Experimental/EE-K36-Panel4,Experimental/EE-V12-Var1-Panel3,Experimental/EE-V12-Var3-Panel3,Experimental/K36S,Experimental/R36T,Experimental/RX6H,rk3326-r36s-clone-k36-panel5
+G80CA-MB-V1.3	G80CA-MB V1.3-20251212		len370:abc2538808d7	640x480	rk817	stock	Devices/EE-G80-Panel8,Devices/OkRoll-Clone,Experimental/EE-K36-Panel1,Experimental/EE-V12-Var1-Panel8,Experimental/EE-V12-Var2,Experimental/Kinhank-K36,Experimental/OkRoll-Mux,Experimental/R36S-Y02-Y07,Experimental/XF35H
+G80CA-MB-V1.3-Panel-8	G80CA-MB V1.3-20251212 Panel 8	G80CA-MB V1.3-20251212 Panel 8	len370:abc2538808d7	640x480	rk817	dArkOSen,dArkOSRE	Devices/EE-G80-Panel8,Devices/OkRoll-Clone,Experimental/EE-K36-Panel1,Experimental/EE-V12-Var1-Panel8,Experimental/EE-V12-Var2,Experimental/Kinhank-K36,Experimental/OkRoll-Mux,Experimental/R36S-Y02-Y07,Experimental/XF35H
+G80D-MB-V1.0-Panel-8	G80D-MB V1.0-20250609 Panel 8	G80D-MB V1.0-20250609 Panel 8	len370:abc2538808d7	640x480	rk817	dArkOSRE	Devices/EE-G80-Panel8,Devices/OkRoll-Clone,Experimental/EE-K36-Panel1,Experimental/EE-V12-Var1-Panel8,Experimental/EE-V12-Var2,Experimental/Kinhank-K36,Experimental/OkRoll-Mux,Experimental/R36S-Y02-Y07,Experimental/XF35H
+H7	h7		len798:f31ef4f72905	1024x768	rk817	dArkOS-arkos4clone	Experimental/R36-Ultra-X,rk3326-r36s-clone-r36max2
+HG36	hg36		len370:abc2538808d7	640x480	rk817	andr36oid-community,dArkOS-arkos4clone	Devices/EE-G80-Panel8,Devices/OkRoll-Clone,Experimental/EE-K36-Panel1,Experimental/EE-V12-Var1-Panel8,Experimental/EE-V12-Var2,Experimental/Kinhank-K36,Experimental/OkRoll-Mux,Experimental/R36S-Y02-Y07,Experimental/XF35H
+HG36-HG3506			len370:abc2538808d7	640x480	rk817	stock	Devices/EE-G80-Panel8,Devices/OkRoll-Clone,Experimental/EE-K36-Panel1,Experimental/EE-V12-Var1-Panel8,Experimental/EE-V12-Var2,Experimental/Kinhank-K36,Experimental/OkRoll-Mux,Experimental/R36S-Y02-Y07,Experimental/XF35H
+HL-R36H-ProMax-V20	HL-R36H-ProMax-V20 2025-11-18	HL-R36H-ProMax-V20 2025-11-18	len843:e71b8ef9dcc5	1024x768	rk817	dArkOSen	Devices/R45H
+HL-R36H-V20	HL-R36H-V20 2024-05-18	HL-R36H-V20 2024-05-18	len773:a6cce3ac8d2f	640x480	rk817	dArkOSen,dArkOSRE,unknown-system	Experimental/R36S-V30-2603,Panels/Panel4
+HL-R36H-V21	HL-R36H-V21 2024-11-18	HL-R36H-V21 2024-11-18	len763:8443715c6738	640x480	rk817	dArkOSen,dArkOSRE	Experimental/R36S-V21,Experimental/R36S-V21-2551-2552,Experimental/R36S-V22
+HL-R40PRO-MAX-V12	HL-R40PRO-MAX-V12 2025-09-18	HL-R40PRO-MAX-V12 2025-09-18	len843:ea90b15c2b44	1024x768	rk817	dArkOSen	Devices/R46H
+HL-R45H-V11	HL-R45H-V11 2025-06-18	HL-R45H-V11 2025-06-18	len843:ea90b15c2b44	1024x768	rk817	dArkOSen	Devices/R46H
+HL-R45H-V20	HL-R45H-V20 2025-11-18	HL-R45H-V20 2025-11-18	len843:e71b8ef9dcc5	1024x768	rk817	dArkOSen	Devices/R45H
+HL-R45H-V22	HL-R45H-V22 2026-03-09	HL-R45H-V22 2026-03-09	len843:ea90b15c2b44	1024x768	rk817	dArkOSen	Devices/R46H
+HL-R46H-V20	HL-R46H-V20 2025-09-09	HL-R46H-V20 2025-09-09	len843:ea90b15c2b44	1024x768	rk817	dArkOSen	Devices/R46H
+HL-R46H-V22	HL-R46H-V22 2026-03-12	HL-R46H-V22 2026-03-12	len928:f260403c4edc	640x480	rk817	andr36oid,dArkOSen	Experimental/R36S-V30,rk3326-r46h-v22-android
+HL-R50H-V11-2617	HL-R50H-V11 2026-03-31 2617	HL-R50H-V11 2026-03-31 2617	len816:ce000ad21b3f	720x1280	rk817	andr36oid,dArkOSen	rk3326-r50h-android
+HL-R50S-V30	HL-R50S-V30 2025-12-18	HL-R50S-V30 2025-12-18	len923:e7f072ac603d	640x480	rk817	andr36oid,dArkOSen	rk3326-r50s-v30-android
+K36	k36		len370:abc2538808d7	640x480	rk817	andr36oid,andr36oid-community,dArkOS-arkos4clone,dArkOS-arkos4clone-patched,stock	Experimental/EE-K36-Panel1,Experimental/Kinhank-K36
+K36S	k36s		len753:cb15584a55e1	640x480	rk817	andr36oid,dArkOS-arkos4clone,Gamely-Code,stock	Experimental/K36S
+L35			len370:abc2538808d7	640x480	rk817	stock	Devices/EE-G80-Panel8,Devices/OkRoll-Clone,Experimental/EE-K36-Panel1,Experimental/EE-V12-Var1-Panel8,Experimental/EE-V12-Var2,Experimental/Kinhank-K36,Experimental/OkRoll-Mux,Experimental/R36S-Y02-Y07,Experimental/XF35H
+M1S					rk809	Armbian	
+Mini-28						stock	
+Mini40	mini40		len370:9e7bb2a3445b	720x720	rk817	dArkOS-arkos4clone	Experimental/R36-Max,Experimental/R36-Ultra,Experimental/S600,Experimental/XF40H,rk3326-r36s-clone-r36max-type2
+mipi-panel						unknown-system	
+MyMini	mymini		len370:abc2538808d7	640x480	rk817	dArkOS-arkos4clone,Gamely-Code,stock	Devices/EE-G80-Panel8,Devices/OkRoll-Clone,Experimental/EE-K36-Panel1,Experimental/EE-V12-Var1-Panel8,Experimental/EE-V12-Var2,Experimental/Kinhank-K36,Experimental/OkRoll-Mux,Experimental/R36S-Y02-Y07,Experimental/XF35H
+O30S	o30s		len773:a6cce3ac8d2f	640x480	rk817	dArkOS-arkos4clone	Experimental/R36S-V30-2603,Panels/Panel4
+ODROID-GO2	go2		len798:f31ef4f72905	1024x768	rk817	Armbian,dArkOS,dArkOS-arkos4clone,ROCKNIX	Experimental/R36-Ultra-X,rk3326-r36s-clone-r36max2
+ODROID-GO2-V1.1					rk817	Armbian,ROCKNIX	
+ODROID-GO3					rk817	Armbian,dArkOS,ROCKNIX	
+OkRoll-Clone	R36S V20 2025-05-18 (K36-ADC;  "OkRoll clone")		len370:abc2538808d7	640x480	rk817	andr36oid,stock	Devices/OkRoll-Clone,Experimental/OkRoll-Mux
+Project-X-Pro			len346:4f959c63fdb2	480x800	rk817	stock	
+px30-ad-d6-anx6345					rk809	dArkOS,unknown-system	
+px30-ad-r35-mb-rk618-dual-lvds			len868:db5c8cd5bb96	800x1280	rk809	dArkOS,unknown-system	
+px30-ad-r35-mb-rk618-hdmi			len868:db5c8cd5bb96	800x1280	rk809	dArkOS,unknown-system	
+px30-ad-r35-mb-rk618-hdmi-lvds			len868:db5c8cd5bb96	800x1280	rk809	dArkOS,unknown-system	
+px30-ad-r35-mb-rk618-lvds			len868:db5c8cd5bb96	800x1280	rk809	dArkOS,unknown-system	
+px30-engicam-px30-core-ctouch2					rk809	Armbian	
+px30-engicam-px30-core-ctouch2-of10					rk809	Armbian	
+px30-engicam-px30-core-edimm2.2					rk809	Armbian	
+px30-evb					rk809	Armbian	
+px30-evb-ddr3-lvds-v10					rk809	dArkOS,unknown-system	
+px30-evb-ddr3-v10			len333:0bf3906a55ad	720x1280	rk809	dArkOS,unknown-system	
+px30-evb-ddr3-v10-avb			len333:0bf3906a55ad	720x1280	rk809	dArkOS,unknown-system	
+px30-evb-ddr3-v10-linux			len333:0bf3906a55ad	720x1280	rk809	dArkOS,unknown-system	
+px30-evb-ddr3-v10-robot-linux					rk809	dArkOS,unknown-system	
+px30-evb-ddr3-v10-robot-no-gpu-linux					rk809	dArkOS,unknown-system	
+px30-evb-ddr4-v10			len333:0bf3906a55ad	720x1280	rk809	dArkOS,unknown-system	
+px30-evb-ext-rk618			len333:0bf3906a55ad	720x1280	rk809	dArkOS,unknown-system	
+px30-evb-ext-rk618-avb			len333:0bf3906a55ad	720x1280	rk809	dArkOS,unknown-system	
+px30-firefly-jd4-core-mb					rk809	Armbian	
+px30-ringneck-haikou					rk809	Armbian	
+px30-z7-a0-rk618-dsi			len79:48d70bf3c4ae	1200x1920	rk809	dArkOS,unknown-system	
+R33S	r33s		len370:b1037b8dea1f	640x480	rk817	Armbian,dArkOS-arkos4clone,ROCKNIX	Panels/Panel0,rk3326-r50s-v30-b-android
+R35S			len370:b1037b8dea1f	640x480	rk817	dArkOS	Panels/Panel0,rk3326-r50s-v30-b-android
+R35S-V11	R35S-V11 2022-08-18	R35S-V11 2022-08-18	len370:b1037b8dea1f	640x480	rk817	dArkOSRE	Panels/Panel0,rk3326-r50s-v30-b-android
+R36-Max			len370:9e7bb2a3445b	720x720	rk817	andr36oid,Armbian,Gamely-Code,ROCKNIX,stock	Experimental/R36-Max
+R36-Max-2	r36max2		len798:f31ef4f72905	1024x768	rk817	andr36oid,dArkOS-arkos4clone	Experimental/R36-Ultra-X,rk3326-r36s-clone-r36max2
+R36-Max-Type-1	r36max type1		len370:9e7bb2a3445b	720x720	rk817	dArkOS-arkos4clone	Experimental/R36-Max,Experimental/R36-Ultra,Experimental/S600,Experimental/XF40H,rk3326-r36s-clone-r36max-type2
+R36-Max-Type-2	r36max type2		len370:9e7bb2a3445b	720x720	rk817	andr36oid,dArkOS-arkos4clone	Experimental/R36-Max,Experimental/R36-Ultra,Experimental/S600,Experimental/XF40H,rk3326-r36s-clone-r36max-type2
+R36-Max-Type-3	r36max type3		len370:9e7bb2a3445b	720x720	rk817	dArkOS-arkos4clone	Experimental/R36-Max,Experimental/R36-Ultra,Experimental/S600,Experimental/XF40H,rk3326-r36s-clone-r36max-type2
+R36-Pro	r36pro		len370:abc2538808d7	640x480	rk817	dArkOS-arkos4clone,Gamely-Code,stock	Devices/EE-G80-Panel8,Devices/OkRoll-Clone,Experimental/EE-K36-Panel1,Experimental/EE-V12-Var1-Panel8,Experimental/EE-V12-Var2,Experimental/Kinhank-K36,Experimental/OkRoll-Mux,Experimental/R36S-Y02-Y07,Experimental/XF35H
+R36-Ultra	GR36-MB V1.1-20250422; R36Ultra; r36ultra	GR36-MB V1.1-20250422	len370:9e7bb2a3445b	720x720	rk817	andr36oid,andr36oid-community,ArkOS,dArkOS-arkos4clone,dArkOSRE,stock	Experimental/R36-Ultra
+R36-Ultra-X	r36ultrax		len798:f31ef4f72905	1024x768	rk817	andr36oid,dArkOS-arkos4clone,stock	Experimental/R36-Ultra-X
+R36H	r36h		len773:a6cce3ac8d2f	640x480	rk817	dArkOS-arkos4clone	Experimental/R36S-V30-2603,Panels/Panel4
+R36H-Pro-Max	r36hpromax		len843:ea90b15c2b44	1024x768	rk817	dArkOS-arkos4clone	Devices/R46H
+R36S-clone-type-1-Panel-1	clone type1 panel1		len370:abc2538808d7	640x480	rk817	dArkOS-arkos4clone	Devices/EE-G80-Panel8,Devices/OkRoll-Clone,Experimental/EE-K36-Panel1,Experimental/EE-V12-Var1-Panel8,Experimental/EE-V12-Var2,Experimental/Kinhank-K36,Experimental/OkRoll-Mux,Experimental/R36S-Y02-Y07,Experimental/XF35H
+R36S-clone-type-1-Panel-1-amp	clone type1 panel1 amp		len370:abc2538808d7	640x480	rk817	dArkOS-arkos4clone	Devices/EE-G80-Panel8,Devices/OkRoll-Clone,Experimental/EE-K36-Panel1,Experimental/EE-V12-Var1-Panel8,Experimental/EE-V12-Var2,Experimental/Kinhank-K36,Experimental/OkRoll-Mux,Experimental/R36S-Y02-Y07,Experimental/XF35H
+R36S-clone-type-1-Panel-1-invert	clone type1 panel1 invert		len370:abc2538808d7	640x480	rk817	dArkOS-arkos4clone	Devices/EE-G80-Panel8,Devices/OkRoll-Clone,Experimental/EE-K36-Panel1,Experimental/EE-V12-Var1-Panel8,Experimental/EE-V12-Var2,Experimental/Kinhank-K36,Experimental/OkRoll-Mux,Experimental/R36S-Y02-Y07,Experimental/XF35H
+R36S-clone-type-1-Panel-2	clone type1 panel2		len753:cb15584a55e1	640x480	rk817	dArkOS-arkos4clone	Experimental/EE-G80-Panel9,Experimental/EE-K36-Panel4,Experimental/EE-V12-Var1-Panel3,Experimental/EE-V12-Var3-Panel3,Experimental/K36S,Experimental/R36T,Experimental/RX6H,rk3326-r36s-clone-k36-panel5
+R36S-clone-type-1-Panel-3	clone type1 panel3		len758:3bf9337f28b7	640x480	rk817	andr36oid,dArkOS-arkos4clone	rk3326-r36s-clone-k36-panel3
+R36S-clone-type-1-Panel-4	clone type1 panel4		len375:a00bd8c7ed08	640x480	rk817	andr36oid,dArkOS-arkos4clone	rk3326-r36s-clone-k36-panel4-alt
+R36S-clone-type-1-Panel-5	clone type1 panel5		len753:cb15584a55e1	640x480	rk817	andr36oid,dArkOS-arkos4clone	Experimental/EE-G80-Panel9,Experimental/EE-K36-Panel4,Experimental/EE-V12-Var1-Panel3,Experimental/EE-V12-Var3-Panel3,Experimental/K36S,Experimental/R36T,Experimental/RX6H,rk3326-r36s-clone-k36-panel5
+R36S-clone-type-1-Panel-5-invert	clone type1 panel5 invert		len753:cb15584a55e1	640x480	rk817	dArkOS-arkos4clone	Experimental/EE-G80-Panel9,Experimental/EE-K36-Panel4,Experimental/EE-V12-Var1-Panel3,Experimental/EE-V12-Var3-Panel3,Experimental/K36S,Experimental/R36T,Experimental/RX6H,rk3326-r36s-clone-k36-panel5
+R36S-clone-type-1-Panel-6	clone type1 panel6		len370:0c7df7fc2e3a	640x480	rk817	andr36oid,dArkOS-arkos4clone	rk3326-r36s-clone-k36-panel6
+R36S-clone-type-2-Panel-1	clone type2 panel1		len370:abc2538808d7	640x480	rk817	dArkOS-arkos4clone	Devices/EE-G80-Panel8,Devices/OkRoll-Clone,Experimental/EE-K36-Panel1,Experimental/EE-V12-Var1-Panel8,Experimental/EE-V12-Var2,Experimental/Kinhank-K36,Experimental/OkRoll-Mux,Experimental/R36S-Y02-Y07,Experimental/XF35H
+R36S-clone-type-2-Panel-1-amp	clone type2 panel1 amp		len370:abc2538808d7	640x480	rk817	dArkOS-arkos4clone	Devices/EE-G80-Panel8,Devices/OkRoll-Clone,Experimental/EE-K36-Panel1,Experimental/EE-V12-Var1-Panel8,Experimental/EE-V12-Var2,Experimental/Kinhank-K36,Experimental/OkRoll-Mux,Experimental/R36S-Y02-Y07,Experimental/XF35H
+R36S-clone-type-2-Panel-1-rk809	clone type2 panel1 rk809		len370:abc2538808d7	640x480	rk809	dArkOS-arkos4clone	Devices/EE-G80-Panel8,Devices/OkRoll-Clone,Experimental/EE-K36-Panel1,Experimental/EE-V12-Var1-Panel8,Experimental/EE-V12-Var2,Experimental/Kinhank-K36,Experimental/OkRoll-Mux,Experimental/R36S-Y02-Y07,Experimental/XF35H
+R36S-clone-type-2-Panel-2	clone type2 panel2		len753:cb15584a55e1	640x480	rk817	dArkOS-arkos4clone	Experimental/EE-G80-Panel9,Experimental/EE-K36-Panel4,Experimental/EE-V12-Var1-Panel3,Experimental/EE-V12-Var3-Panel3,Experimental/K36S,Experimental/R36T,Experimental/RX6H,rk3326-r36s-clone-k36-panel5
+R36S-EE-Clone			len370:abc2538808d7	640x480	rk817	ArkOS,stock	Devices/EE-G80-Panel8,Devices/OkRoll-Clone,Experimental/EE-K36-Panel1,Experimental/EE-V12-Var1-Panel8,Experimental/EE-V12-Var2,Experimental/Kinhank-K36,Experimental/OkRoll-Mux,Experimental/R36S-Y02-Y07,Experimental/XF35H
+R36S-G80CA-V1.3-2549	R36S-G80CA-V1.3 2025-12-24 2549		len370:abc2538808d7	640x480	rk817	stock	Devices/EE-G80-Panel8,Devices/OkRoll-Clone,Experimental/EE-K36-Panel1,Experimental/EE-V12-Var1-Panel8,Experimental/EE-V12-Var2,Experimental/Kinhank-K36,Experimental/OkRoll-Mux,Experimental/R36S-Y02-Y07,Experimental/XF35H
+R36S-generic					rk817	Armbian,BadgeOS,ROCKNIX	
+R36S-Panel-0	origin panel0; R36S-V12 2023-08-18 Panel 0	R36S-V12 2023-08-18 Panel 0	len370:b1037b8dea1f	640x480	rk817	andr36oid,ArkOS,Armbian,dArkOS-arkos4clone,dArkOSen,dArkOSRE	Panels/Panel0
+R36S-Panel-1	origin panel1		len299:a42642c10bd6	640x480	rk817	andr36oid,ArkOS,Armbian,dArkOS-arkos4clone	Panels/Panel1
+R36S-Panel-2	origin panel2; Y3506_V05_20251215		len933:0632f23b0065	640x480	rk817	andr36oid,ArkOS,Armbian,dArkOS-arkos4clone,stock	Panels/Panel2
+R36S-Panel-3	origin panel3		len938:da5748ca44e5	640x480	rk817	andr36oid,ArkOS,Armbian,dArkOS-arkos4clone	Experimental/R36S-Panel3-Alt,Panels/Panel3
+R36S-Panel-4	R36S-V12 2023-08-18 Panel 4; V12 2023-08-19	R36S-V12 2023-08-18 Panel 4	len773:a6cce3ac8d2f	640x480	rk817	andr36oid,ArkOS,dArkOSen,dArkOSRE,stock	Panels/Panel4
+R36S-Panel-4-Type-1	origin panel4 type1		len773:a6cce3ac8d2f	640x480	rk817	andr36oid,dArkOS-arkos4clone	Experimental/R36S-Panel4-Type1
+R36S-Panel-4-Type-2	origin panel4 type2		len763:8443715c6738	640x480	rk817	dArkOS-arkos4clone	Experimental/R36S-V21,Experimental/R36S-V21-2551-2552,Experimental/R36S-V22
+R36S-Panel-4-V22			len763:8443715c6738	640x480	rk817	ArkOS	Experimental/R36S-V21,Experimental/R36S-V21-2551-2552,Experimental/R36S-V22
+R36S-Panel-5			len323:eabbd1995483	640x480	rk817	andr36oid,ArkOS	Panels/Panel5
+R36S-Panel-6			len755:d8a52c011334	640x480	rk817	andr36oid,ArkOS	Panels/Panel6
+R36S-Plus	r36splus; R46H		len326:b8f80ba146c1	720x720	rk817	andr36oid,dArkOS-arkos4clone,stock	Panels/R36S-Plus
+R36S-Plus-V20	R36S Plus-V20 2025-03-18	R36S Plus-V20 2025-03-18	len326:b8f80ba146c1	720x720	rk817	dArkOSRE	Panels/R36S-Plus
+R36S-Plus-V20-2551	R36S-Plus-V20 2025-03-18 2551	R36S-Plus-V20 2025-03-18 2551	len326:b8f80ba146c1	720x720	rk817	dArkOSen	Panels/R36S-Plus
+R36S-V12-Variant-1-Panel-3-A	R36S-V12 2023-08-18 Variant 1 Panel 3 A; V12	R36S-V12 2023-08-18 Variant 1 Panel 3 A	len753:cb15584a55e1	640x480	rk817	andr36oid,dArkOSen,dArkOSRE,unknown-system	Experimental/EE-V12-Var1-Panel3
+R36S-V12-Variant-1-Panel-8-A	R36S-V12 2023-08-18 Variant 1 Panel 8 A; rk3326-r36s-type2-linux	R36S-V12 2023-08-18 Variant 1 Panel 8 A	len370:abc2538808d7	640x480	rk817	andr36oid,dArkOSen,dArkOSRE,unknown-system	Experimental/EE-V12-Var1-Panel8
+R36S-V12-Variant-2-Panel-1	R36S-V12 2023-08-18 Variant 2 Panel 1	R36S-V12 2023-08-18 Variant 2 Panel 1	len370:abc2538808d7	640x480	rk817	andr36oid,dArkOSen,dArkOSRE	Experimental/EE-V12-Var2
+R36S-V12-Variant-2-Panel-1-A	R36S-V12 2023-08-18 Variant 2 Panel 1 A	R36S-V12 2023-08-18 Variant 2 Panel 1 A	len370:abc2538808d7	640x480	rk817	dArkOSen,dArkOSRE	Devices/EE-G80-Panel8,Devices/OkRoll-Clone,Experimental/EE-K36-Panel1,Experimental/EE-V12-Var1-Panel8,Experimental/EE-V12-Var2,Experimental/Kinhank-K36,Experimental/OkRoll-Mux,Experimental/R36S-Y02-Y07,Experimental/XF35H
+R36S-V12-Variant-3-Panel-3	R36S-V12 2023-08-18 Variant 3 Panel 3	R36S-V12 2023-08-18 Variant 3 Panel 3	len753:cb15584a55e1	640x480	rk817	andr36oid,dArkOSen,dArkOSRE	Experimental/EE-V12-Var3-Panel3
+R36S-V12-Variant-3-Panel-A	R36S-V12 2023-08-18 Variant 3 Panel A	R36S-V12 2023-08-18 Variant 3 Panel A	len375:0cb7879a2d81	640x480	rk817	andr36oid,dArkOSen,dArkOSRE	Experimental/EE-V12-Var3-PanelA
+R36S-V20-2541	R36S-V20 2025-05-18 2541; V20 2025-05-18 2541	R36S-V20 2025-05-18 2541	len753:cb15584a55e1	640x480	rk817	andr36oid,dArkOSRE	Experimental/EE-K36-Panel4
+R36S-V20-2548	R36S-V20 2025-05-18 2548; V20 2025-05-18 2548	R36S-V20 2025-05-18 2548	len370:abc2538808d7	640x480	rk817	dArkOSRE	Devices/EE-G80-Panel8,Devices/OkRoll-Clone,Experimental/EE-K36-Panel1,Experimental/EE-V12-Var1-Panel8,Experimental/EE-V12-Var2,Experimental/Kinhank-K36,Experimental/OkRoll-Mux,Experimental/R36S-Y02-Y07,Experimental/XF35H
+R36S-V20-2549	R36S-V20 2025-05-18 2549; V20 2025-05-18 2549	R36S-V20 2025-05-18 2549	len370:abc2538808d7	640x480	rk817	dArkOSRE	Devices/EE-G80-Panel8,Devices/OkRoll-Clone,Experimental/EE-K36-Panel1,Experimental/EE-V12-Var1-Panel8,Experimental/EE-V12-Var2,Experimental/Kinhank-K36,Experimental/OkRoll-Mux,Experimental/R36S-Y02-Y07,Experimental/XF35H
+R36S-V21-2503	R36S-V21 2024-12-18 2503	R36S-V21 2024-12-18 2503	len763:8443715c6738	640x480	rk817	dArkOSen,stock	Experimental/R36S-V21,Experimental/R36S-V21-2551-2552,Experimental/R36S-V22
+R36S-V21-2529	R36S-V21 2024-12-18 2529	R36S-V21 2024-12-18 2529	len763:8443715c6738	640x480	rk817	dArkOSen	Experimental/R36S-V21,Experimental/R36S-V21-2551-2552,Experimental/R36S-V22
+R36S-V21-2537	R36S-V21 2024-12-18 2537	R36S-V21 2024-12-18 2537	len773:a6cce3ac8d2f	640x480	rk817	dArkOSen	Experimental/R36S-V30-2603,Panels/Panel4
+R36S-V21-2544	R36S-V21 2024-12-18 2544	R36S-V21 2024-12-18 2544	len763:8443715c6738	640x480	rk817	dArkOSen	Experimental/R36S-V21,Experimental/R36S-V21-2551-2552,Experimental/R36S-V22
+R36S-V21-2547	R36S-V21 2024-12-18 2547	R36S-V21 2024-12-18 2547	len773:a6cce3ac8d2f	640x480	rk817	dArkOSen	Experimental/R36S-V30-2603,Panels/Panel4
+R36S-V21-2550	R36S-V21 2024-12-18 2550	R36S-V21 2024-12-18 2550	len763:8443715c6738	640x480	rk817	andr36oid,dArkOSen,dArkOSRE	Experimental/R36S-V21
+R36S-V21-2551	R36S-V21 2024-12-18 2551	R36S-V21 2024-12-18 2551	len763:8443715c6738	640x480	rk817	andr36oid,dArkOSen,dArkOSRE	Experimental/R36S-V21-2551-2552
+R36S-V21-2552	R36S-V21 2024-12-18 2552	R36S-V21 2024-12-18 2552	len763:8443715c6738	640x480	rk817	dArkOSen,dArkOSRE	Experimental/R36S-V21,Experimental/R36S-V21-2551-2552,Experimental/R36S-V22
+R36S-V21-2602	R36S-V21 2024-12-18 2602	R36S-V21 2024-12-18 2602	len763:8443715c6738	640x480	rk817	dArkOSen	Experimental/R36S-V21,Experimental/R36S-V21-2551-2552,Experimental/R36S-V22
+R36S-V21-2604	R36S-V21 2024-12-18 2604	R36S-V21 2024-12-18 2604	len763:8443715c6738	640x480	rk817	dArkOSen	Experimental/R36S-V21,Experimental/R36S-V21-2551-2552,Experimental/R36S-V22
+R36S-V21-Panel-4-rumble-test	v21 panel4 rumble test		len773:a6cce3ac8d2f	640x480	rk817	dArkOS-arkos4clone	Experimental/R36S-V30-2603,Panels/Panel4
+R36S-V22	R36S-V22 2024-12-18	R36S-V22 2024-12-18	len763:8443715c6738	640x480	rk817	andr36oid,dArkOSen,dArkOSRE	Experimental/R36S-V22
+R36S-V22-2534	R36S-V22 2024-12-18 2534	R36S-V22 2024-12-18 2534	len763:8443715c6738	640x480	rk817	dArkOSen	Experimental/R36S-V21,Experimental/R36S-V21-2551-2552,Experimental/R36S-V22
+R36S-V22-2535	R36S-V22 2024-12-18 2535	R36S-V22 2024-12-18 2535	len763:8443715c6738	640x480	rk817	dArkOSen	Experimental/R36S-V21,Experimental/R36S-V21-2551-2552,Experimental/R36S-V22
+R36S-V22-2545	R36S-V22 2024-12-18 2545	R36S-V22 2024-12-18 2545	len763:8443715c6738	640x480	rk817	dArkOSen	Experimental/R36S-V21,Experimental/R36S-V21-2551-2552,Experimental/R36S-V22
+R36S-V22-2548	R36S-V22 2024-12-18 2548	R36S-V22 2024-12-18 2548	len763:8443715c6738	640x480	rk817	dArkOSen	Experimental/R36S-V21,Experimental/R36S-V21-2551-2552,Experimental/R36S-V22
+R36S-V22-2551	R36S-V22 2025-09-22 2551		len773:a6cce3ac8d2f	640x480	rk817	stock	Experimental/R36S-V30-2603,Panels/Panel4
+R36S-V30	R36S-V30 2025-11-18; R46H; RGB20S; rgb20s	R36S-V30 2025-11-18	len928:f260403c4edc	640x480	rk817	andr36oid,ArkOS,dArkOS-arkos4clone,dArkOSRE,stock	Experimental/R36S-V30
+R36S-V30-2552	R36S-V30 2025-11-18 2552					ROCKNIX	
+R36S-V30-2603	R36S-V30 2025-11-18 2603; R36S-V30 2025-18-11 2603	R36S-V30 2025-18-11 2603	len773:a6cce3ac8d2f	640x480	rk817	andr36oid,ArkOS,dArkOSen	Experimental/R36S-V30-2603
+R36S-Y02-2024-11-27		R36S-Y02 2024-11-27	len370:abc2538808d7	640x480	rk817	dArkOSRE	Devices/EE-G80-Panel8,Devices/OkRoll-Clone,Experimental/EE-K36-Panel1,Experimental/EE-V12-Var1-Panel8,Experimental/EE-V12-Var2,Experimental/Kinhank-K36,Experimental/OkRoll-Mux,Experimental/R36S-Y02-Y07,Experimental/XF35H
+R36S-Y02-2024-12-18		R36S-Y02 2024-12-18	len370:abc2538808d7	640x480	rk817	andr36oid,dArkOSen,dArkOSRE	Experimental/R36S-Y02-Y07
+R36T	r36t		len753:cb15584a55e1	640x480	rk817	andr36oid,dArkOS-arkos4clone,stock	Experimental/R36T
+R36T-Max	r36tmax		len370:9e7bb2a3445b	720x720	rk817	dArkOS-arkos4clone	Experimental/R36-Max,Experimental/R36-Ultra,Experimental/S600,Experimental/XF40H,rk3326-r36s-clone-r36max-type2
+R36XX	r36xx		len773:a6cce3ac8d2f	640x480	rk817	dArkOS-arkos4clone	Experimental/R36S-V30-2603,Panels/Panel4
+R36XX-V21	R36XX-V21 2024-12-18	R36XX-V21 2024-12-18	len763:8443715c6738	640x480	rk817	dArkOSen,dArkOSRE	Experimental/R36S-V21,Experimental/R36S-V21-2551-2552,Experimental/R36S-V22
+R39-Max			len768:3e1b8196c1ff	720x720	rk817	andr36oid,stock	Experimental/R39-Max
+R40S	r40s		len164:594f7e3cfba8	480x800	rk817	andr36oid,dArkOS-arkos4clone	rk3326-r40s-android
+R40XX	r40xx		len843:ea90b15c2b44	1024x768	rk817	dArkOS-arkos4clone	Devices/R46H
+R40XX-Pro-Max	r40xxpromax		len843:ea90b15c2b44	1024x768	rk817	dArkOS-arkos4clone	Devices/R46H
+R45H	r45h		len843:ea90b15c2b44	1024x768	rk817	andr36oid,dArkOS-arkos4clone	Devices/R45H
+R46H	r46h		len843:ea90b15c2b44	1024x768	rk817	andr36oid,ArkOS,dArkOS-arkos4clone,unknown-system	Devices/R46H
+R50H	r50h		len816:ce000ad21b3f	720x1280	rk817	dArkOS-arkos4clone	rk3326-r50h-android
+R50S	r50s		len322:3e6668dd4b20	480x854	rk817	andr36oid,dArkOS-arkos4clone	Devices/R50S
+rf3536k3ka			len370:abc2538808d7	640x480	rk817	ArkOS	Devices/EE-G80-Panel8,Devices/OkRoll-Clone,Experimental/EE-K36-Panel1,Experimental/EE-V12-Var1-Panel8,Experimental/EE-V12-Var2,Experimental/Kinhank-K36,Experimental/OkRoll-Mux,Experimental/R36S-Y02-Y07,Experimental/XF35H
+RF35H	rf35h		len370:abc2538808d7	640x480	rk817	dArkOS-arkos4clone	Devices/EE-G80-Panel8,Devices/OkRoll-Clone,Experimental/EE-K36-Panel1,Experimental/EE-V12-Var1-Panel8,Experimental/EE-V12-Var2,Experimental/Kinhank-K36,Experimental/OkRoll-Mux,Experimental/R36S-Y02-Y07,Experimental/XF35H
+RF35XE-MB-V1.1	RF35XE-MB V1.1_20240508		len753:cb15584a55e1	640x480	rk817	stock	Experimental/EE-G80-Panel9,Experimental/EE-K36-Panel4,Experimental/EE-V12-Var1-Panel3,Experimental/EE-V12-Var3-Panel3,Experimental/K36S,Experimental/R36T,Experimental/RX6H,rk3326-r36s-clone-k36-panel5
+RF40H	rf40h		len370:9e7bb2a3445b	720x720	rk817	dArkOS-arkos4clone	Experimental/R36-Max,Experimental/R36-Ultra,Experimental/S600,Experimental/XF40H,rk3326-r36s-clone-r36max-type2
+RF45H	rf45h		len798:f31ef4f72905	1024x768	rk817	dArkOS-arkos4clone	Experimental/R36-Ultra-X,rk3326-r36s-clone-r36max2
+RF45V	rf45v		len798:f31ef4f72905	1024x768	rk817	dArkOS-arkos4clone	Experimental/R36-Ultra-X,rk3326-r36s-clone-r36max2
+RF55H	rf55h		len375:3a86f063c495	720x1280	rk817	dArkOS-arkos4clone	
+RG-ARC-D					rk817	Armbian	
+RG-ARC-S					rk817	Armbian	
+RG-ARC-SD			len346:f8434f0a5c86	480x640	rk817	stock	
+RG28XX						stock	
+RG351M					rk817	Armbian,ROCKNIX	
+RG351MP	rg351mp		len928:f260403c4edc	640x480	rk817	dArkOS,dArkOS-arkos4clone	Experimental/R36S-V30,rk3326-r46h-v22-android
+RG351P	rg351p		len120:37832c1fd4fd	320x480	rk817	dArkOS,dArkOS-arkos4clone	
+RG351V					rk817	Armbian,dArkOS,ROCKNIX	
+RG351V-Panel-1	rg351v panel1		len928:f260403c4edc	640x480	rk817	dArkOS-arkos4clone	Experimental/R36S-V30,rk3326-r46h-v22-android
+RG351V-Panel-2	rg351v panel2		len370:b1037b8dea1f	640x480	rk817	dArkOS-arkos4clone	Panels/Panel0,rk3326-r50s-v30-b-android
+RG353M			len923:225ce2f8eb6a	640x480	rk817	stock	
+RG353P			len923:225ce2f8eb6a	640x480	rk817	Armbian,stock	
+RG353PS					rk817	Armbian	
+RG353V			len923:225ce2f8eb6a	640x480	rk817	Armbian,stock	
+RG353VS					rk817	Armbian	
+RG36	rg36		len370:abc2538808d7	640x480	rk817	dArkOS-arkos4clone	Devices/EE-G80-Panel8,Devices/OkRoll-Clone,Experimental/EE-K36-Panel1,Experimental/EE-V12-Var1-Panel8,Experimental/EE-V12-Var2,Experimental/Kinhank-K36,Experimental/OkRoll-Mux,Experimental/R36S-Y02-Y07,Experimental/XF35H
+RG36-Pro	rg36pro		len370:abc2538808d7	640x480	rk817	dArkOS-arkos4clone	Devices/EE-G80-Panel8,Devices/OkRoll-Clone,Experimental/EE-K36-Panel1,Experimental/EE-V12-Var1-Panel8,Experimental/EE-V12-Var2,Experimental/Kinhank-K36,Experimental/OkRoll-Mux,Experimental/R36S-Y02-Y07,Experimental/XF35H
+RG36S-Y07	RG36S-Y07 2025-09-11	RG36S-Y07 2025-09-11	len370:abc2538808d7	640x480	rk817	dArkOSRE	Devices/EE-G80-Panel8,Devices/OkRoll-Clone,Experimental/EE-K36-Panel1,Experimental/EE-V12-Var1-Panel8,Experimental/EE-V12-Var2,Experimental/Kinhank-K36,Experimental/OkRoll-Mux,Experimental/R36S-Y02-Y07,Experimental/XF35H
+RG403V			len346:f8434f0a5c86	480x640	rk817	stock	
+RG503					rk817	Armbian	
+RGB10	rgb10		len112:e033dc08540e	320x480	rk817	Armbian,dArkOS-arkos4clone,ROCKNIX	
+RGB10-Max			len322:3e6668dd4b20	480x854	rk817	dArkOS	Devices/R50S
+RGB10-Max-1	rgb10max1		len322:3e6668dd4b20	480x854	rk817	dArkOS-arkos4clone	Devices/R50S
+RGB10-Max-2	rgb10max2		len322:3e6668dd4b20	480x854	rk817	dArkOS-arkos4clone	Devices/R50S
+RGB10MAX3					rk817	Armbian	
+RGB10S			len112:e033dc08540e	320x480	rk817	dArkOS	
+RGB10X	rgb10x		len928:f260403c4edc	640x480	rk817	Armbian,dArkOS-arkos4clone,ROCKNIX	Experimental/R36S-V30,rk3326-r46h-v22-android
+RGB20S					rk817	Armbian,ROCKNIX	
+RGB30					rk817	Armbian	
+RGBV10	rgbv10		len112:e033dc08540e	320x480	rk817	dArkOS-arkos4clone	
+RGC803-V1.1	RGC803-V1.1 20251219		len798:f31ef4f72905	1024x768	rk817	EmuELEC	Experimental/R36-Ultra-X,rk3326-r36s-clone-r36max2
+rk1808-compute-stick-emmc						unknown-system	
+rk1808-compute-v10						unknown-system	
+rk1808-evb-v10			len333:0bf3906a55ad	720x1280	rk809	unknown-system	
+rk1808-evb-x4					rk809	unknown-system	
+rk1808-evb-x4-second					rk809	unknown-system	
+rk1808-fpga						unknown-system	
+RK2023					rk817	Armbian	
+rk3308-ai-va-v10						unknown-system	
+rk3308-evb						Armbian	
+rk3308-evb-amic-v10						unknown-system	
+rk3308-evb-amic-v11						unknown-system	
+rk3308-evb-dmic-i2s-v10						unknown-system	
+rk3308-evb-dmic-i2s-v11						unknown-system	
+rk3308-evb-dmic-pdm-v10						unknown-system	
+rk3308-evb-dmic-pdm-v11						unknown-system	
+rk3308-fpga						unknown-system	
+rk3308-robot						unknown-system	
+rk3308-roc-cc						Armbian	
+rk3308-rock-pi-s						Armbian	
+rk3308-rock-s0						Armbian	
+rk3308-voice-module-board-v10						unknown-system	
+rk3308b-evb-amic-v10						unknown-system	
+rk3318-a95x-z2						Armbian	
+rk3326-863-lp3-v10			len8:d0ecb03b9caa	800x1280	rk817	dArkOS,unknown-system	
+rk3326-863-lp3-v10-avb			len8:d0ecb03b9caa	800x1280	rk817	dArkOS,unknown-system	
+rk3326-86v-v10					rk817	dArkOS,unknown-system	
+RK3326-D3		RK3326-D3	len773:a6cce3ac8d2f	640x480	rk817	dArkOSen	Experimental/R36S-V30-2603,Panels/Panel4
+rk3326-evb-ai-va-v10			len333:0bf3906a55ad	720x1280	rk809	dArkOS,unknown-system	
+rk3326-evb-ai-va-v11			len333:0bf3906a55ad	720x1280	rk809	dArkOS,unknown-system	
+rk3326-evb-ai-va-v11-i2s-dmic			len333:0bf3906a55ad	720x1280	rk809	dArkOS,unknown-system	
+rk3326-evb-ai-va-v11-linux			len333:0bf3906a55ad	720x1280	rk809	dArkOS,unknown-system	
+rk3326-evb-lp3-v10			len333:0bf3906a55ad	720x1280	rk817	dArkOS,unknown-system	
+rk3326-evb-lp3-v10-avb			len333:0bf3906a55ad	720x1280	rk817	dArkOS,unknown-system	
+rk3326-evb-lp3-v10-linux			len333:0bf3906a55ad	720x1280	rk817	dArkOS,unknown-system	
+rk3326-evb-lp3-v10-rk1608-linux			len333:0bf3906a55ad	720x1280	rk817	dArkOS,unknown-system	
+rk3326-evb-lp3-v10-robot-linux					rk817	dArkOS,unknown-system	
+rk3326-evb-lp3-v10-robot-no-gpu-linux					rk817	dArkOS,unknown-system	
+rk3326-evb-lp3-v12-linux			len370:abc2538808d7	640x480	rk817	unknown-system	Devices/EE-G80-Panel8,Devices/OkRoll-Clone,Experimental/EE-K36-Panel1,Experimental/EE-V12-Var1-Panel8,Experimental/EE-V12-Var2,Experimental/Kinhank-K36,Experimental/OkRoll-Mux,Experimental/R36S-Y02-Y07,Experimental/XF35H
+rk3326-gameforce-chi					rk817	Armbian	
+RK3326-image-default-files	dArkOSen card default (top of BOOT); dArkOSRE default (top of BOOT)		len370:abc2538808d7	640x480	rk817	dArkOSen,dArkOSRE	Devices/EE-G80-Panel8,Devices/OkRoll-Clone,Experimental/EE-K36-Panel1,Experimental/EE-V12-Var1-Panel8,Experimental/EE-V12-Var2,Experimental/Kinhank-K36,Experimental/OkRoll-Mux,Experimental/R36S-Y02-Y07,Experimental/XF35H
+rk3326-odroidgo2-linux			len112:e033dc08540e	320x480	rk817	unknown-system	
+rk3326-odroidgo2-linux-v11			len112:e033dc08540e	320x480	rk817	unknown-system	
+RK3326-overlays	dtbo					ArkOS-arkos4clone	
+rk3326-r35s-linux-fixed			len773:a6cce3ac8d2f	640x480	rk817	unknown-system	Experimental/R36S-V30-2603,Panels/Panel4
+rk3326-rg351mplus			len928:fbafdb51bcfb	640x480	rk817	unknown-system	
+rk3326-rg351p-linux			len112:e033dc08540e	320x480	rk817	unknown-system	
+RK3326-U-Boot-RG351-Series						ArkOS,ArkOS-arkos4clone	
+rk3326-w7-icn6211-rk618-hdmi					rk809	dArkOS,unknown-system	
+rk3326-w7-icn6211-rk618-hdmi-rgb					rk809	dArkOS,unknown-system	
+rk3326-w7-icn6211-rk618-rgb					rk809	dArkOS,unknown-system	
+rk3328-a1					rk805	Armbian	
+rk3328-box-liantong						unknown-system	
+rk3328-box-liantong-avb						unknown-system	
+rk3328-evb					rk805	Armbian,unknown-system	
+rk3328-evb-android					rk805	unknown-system	
+rk3328-evb-android-avb					rk805	unknown-system	
+rk3328-nanopi-r2c					rk805	Armbian	
+rk3328-nanopi-r2c-plus					rk805	Armbian	
+rk3328-nanopi-r2s					rk805	Armbian	
+rk3328-nanopi-r2s-plus					rk805	Armbian	
+rk3328-orangepi-r1-plus					rk805	Armbian	
+rk3328-orangepi-r1-plus-lts					rk805	Armbian	
+rk3328-roc-cc					rk805	Armbian	
+rk3328-roc-pc					rk805	Armbian	
+rk3328-rock-pi-e					rk805	Armbian	
+rk3328-rock64					rk805	Armbian,unknown-system	
+rk3328-rock64-android					rk805	unknown-system	
+rk3328-rock64-android-avb					rk805	unknown-system	
+rk3366-fpga						unknown-system	
+rk3366-sheep				1200x1920	rk818	unknown-system	
+rk3368-evb-act8846						Armbian,unknown-system	
+rk3368-geekbox						Armbian,unknown-system	
+rk3368-lba3368						Armbian	
+rk3368-lion-haikou						Armbian	
+rk3368-orion-r68-meta						Armbian	
+rk3368-p9				1920x1200	rk818	unknown-system	
+rk3368-px5-evb						Armbian,unknown-system	
+rk3368-px5-evb-android						unknown-system	
+rk3368-r88						Armbian,unknown-system	
+rk3368-r88-avb						unknown-system	
+rk3368-r88-dcdc						unknown-system	
+rk3368-sheep				1200x1920	rk818	unknown-system	
+rk3368-sheep-lvds					rk818	unknown-system	
+rk3368-sziauto-rk618					rk818	unknown-system	
+rk3368-xikp				1200x1920	rk818	unknown-system	
+rk3399-box-808-android-6.0						unknown-system	
+rk3399-box-rev1						unknown-system	
+rk3399-box-rev1-android-6.0						unknown-system	
+rk3399-box-rev1-disvr						unknown-system	
+rk3399-box-rev2						unknown-system	
+rk3399-box-rev2-android-6.0						unknown-system	
+rk3399-box-rev2-disvr						unknown-system	
+rk3399-disvr-android					rk818	unknown-system	
+rk3399-eaidk-610						Armbian	
+rk3399-evb						Armbian	
+rk3399-evb-rev1-android				1200x1920		unknown-system	
+rk3399-evb-rev1-android-6.0						unknown-system	
+rk3399-evb-rev1-cros						unknown-system	
+rk3399-evb-rev2-android				1200x1920		unknown-system	
+rk3399-evb-rev2-android-6.0						unknown-system	
+rk3399-evb-rev2-cros						unknown-system	
+rk3399-evb-rev3-android				1200x1920		unknown-system	
+rk3399-evb-rev3-android-6.0						unknown-system	
+rk3399-evb-rev3-android-6.0-edp						unknown-system	
+rk3399-evb-rev3-android-edp						unknown-system	
+rk3399-evb-rev3-android-lp4				1200x1920		unknown-system	
+rk3399-evb-rev3-android-mipi-edp				1200x1920		unknown-system	
+rk3399-evb-rev3-cros						unknown-system	
+rk3399-ficus						Armbian	
+rk3399-firefly						Armbian	
+rk3399-firefly-android						unknown-system	
+rk3399-firefly-linux						unknown-system	
+rk3399-fpga						unknown-system	
+rk3399-gru-bob						Armbian	
+rk3399-gru-gru						unknown-system	
+rk3399-gru-kevin						Armbian	
+rk3399-gru-kevin-r0						unknown-system	
+rk3399-gru-kevin-r1						unknown-system	
+rk3399-gru-scarlet-dumo						Armbian	
+rk3399-gru-scarlet-inx						Armbian	
+rk3399-gru-scarlet-kd						Armbian	
+rk3399-hugsun-x99						Armbian	
+rk3399-khadas-edge						Armbian	
+rk3399-khadas-edge-captain						Armbian	
+rk3399-khadas-edge-v						Armbian	
+rk3399-kobol-helios64						Armbian	
+rk3399-leez-p710						Armbian	
+rk3399-mid-818-android					rk818	unknown-system	
+rk3399-mid-818-android-6.0					rk818	unknown-system	
+rk3399-nanopc-t4						Armbian	
+rk3399-nanopi-m4						Armbian	
+rk3399-nanopi-m4b						Armbian	
+rk3399-nanopi-neo4						Armbian	
+rk3399-nanopi-r4s						Armbian	
+rk3399-nanopi-r4s-enterprise						Armbian	
+rk3399-orangepi						Armbian	
+rk3399-pinebook-pro						Armbian	
+rk3399-pinephone-pro					rk818	Armbian	
+rk3399-puma-haikou						Armbian	
+rk3399-roc-pc						Armbian	
+rk3399-roc-pc-mezzanine						Armbian	
+rk3399-roc-pc-plus						Armbian	
+rk3399-rock-4c-plus					rk809	Armbian	
+rk3399-rock-4se						Armbian	
+rk3399-rock-pi-4a						Armbian	
+rk3399-rock-pi-4a-plus						Armbian	
+rk3399-rock-pi-4b						Armbian	
+rk3399-rock-pi-4b-plus						Armbian	
+rk3399-rock-pi-4c						Armbian	
+rk3399-rock960						Armbian	
+rk3399-rock960-ab						unknown-system	
+rk3399-rockpro64						Armbian,unknown-system	
+rk3399-rockpro64-v2						Armbian	
+rk3399-rv1-android					rk818	unknown-system	
+rk3399-sapphire						Armbian	
+rk3399-sapphire-excavator						Armbian	
+rk3399-sapphire-excavator-box						unknown-system	
+rk3399-sapphire-excavator-box-android-6.0						unknown-system	
+rk3399-sapphire-excavator-disvr						unknown-system	
+rk3399-sapphire-excavator-edp						unknown-system	
+rk3399-sapphire-excavator-edp-android-6.0						unknown-system	
+rk3399-sapphire-excavator-edp-avb						unknown-system	
+rk3399-sapphire-excavator-edp-avb-rk1608						unknown-system	
+rk3399-sapphire-excavator-linux						unknown-system	
+rk3399-sapphire-excavator-linux-for-rk1808-cascade				1280x720		unknown-system	
+rk3399-sapphire-excavator-lp4-linux						unknown-system	
+rk3399-sapphire-excavator-v10-linux						unknown-system	
+rk3399-tve1030g			len45:4442c4065852	1200x1920		unknown-system	
+rk3399-tve1030g-avb			len45:4442c4065852	1200x1920		unknown-system	
+rk3399-tve1205g						unknown-system	
+rk3399-videostrong-linux						unknown-system	
+rk3399-vr-android					rk818	unknown-system	
+rk3399pro-evb-lp4-v11-avb					rk809	unknown-system	
+rk3399pro-evb-lp4-v11-linux					rk809	unknown-system	
+rk3399pro-evb-v10					rk809	unknown-system	
+rk3399pro-evb-v10-avb					rk809	unknown-system	
+rk3399pro-evb-v10-linux					rk809	unknown-system	
+rk3399pro-evb-v11					rk809	unknown-system	
+rk3399pro-evb-v11-avb					rk809	unknown-system	
+rk3399pro-evb-v11-linux					rk809	unknown-system	
+rk3399pro-evb-v13-multi-cam					rk809	unknown-system	
+rk3399pro-evb-v13-multi-cam-avb					rk809	unknown-system	
+rk3399pro-npu-evb-v10						unknown-system	
+rk3399pro-npu-evb-v10-multi-cam						unknown-system	
+rk3399pro-rock-pi-n10					rk809	Armbian	
+rk3566-box-demo						Armbian	
+rk3566-lckfb-tspi					rk809	Armbian	
+rk3566-lubancat-1					rk809	Armbian	
+rk3566-orangepi-3b-v1.1					rk809	Armbian	
+rk3566-orangepi-3b-v2.1					rk809	Armbian	
+rk3566-pinenote-v1.1					rk817	Armbian	
+rk3566-pinenote-v1.2					rk817	Armbian	
+rk3566-pinetab2-v0.1					rk817	Armbian	
+rk3566-pinetab2-v2.0					rk817	Armbian	
+rk3566-quartz64-a					rk817	Armbian	
+rk3566-quartz64-b					rk809	Armbian	
+rk3566-radxa-cm3-io					rk817	Armbian	
+rk3566-radxa-zero-3e					rk817	Armbian	
+rk3566-radxa-zero-3w					rk817	Armbian	
+RK3566-RK3568-U-Boot-rk3568-evb						stock	
+rk3566-roc-pc					rk809	Armbian	
+rk3566-rock-3c					rk809	Armbian	
+rk3566-soquartz-blade					rk809	Armbian	
+rk3566-soquartz-cm4					rk809	Armbian	
+rk3566-soquartz-model-a					rk809	Armbian	
+rk3568-bpi-r2-pro					rk809	Armbian	
+rk3568-evb1-v10					rk809	Armbian	
+rk3568-fastrhino-r66s					rk809	Armbian	
+rk3568-fastrhino-r68s					rk809	Armbian	
+rk3568-lubancat-2					rk809	Armbian	
+rk3568-mecsbc						Armbian	
+rk3568-nanopi-r5c					rk809	Armbian	
+rk3568-nanopi-r5s					rk809	Armbian	
+rk3568-odroid-m1					rk809	Armbian	
+rk3568-qnap-ts433					rk809	Armbian	
+rk3568-radxa-e25					rk809	Armbian	
+rk3568-roc-pc					rk809	Armbian	
+rk3568-rock-3a					rk809	Armbian	
+rk3568-rock-3b					rk809	Armbian	
+rk3568-wolfvision-pf5					rk809	Armbian	
+rk3568-wolfvision-pf5-display-vz						Armbian	
+rk3568-wolfvision-pf5-io-expander						Armbian	
+rk3588-armsom-sige7						Armbian	
+rk3588-coolpi-cm5-evb						Armbian	
+rk3588-coolpi-cm5-genbook						Armbian	
+rk3588-edgeble-neu6a-io						Armbian	
+rk3588-edgeble-neu6a-wifi						Armbian	
+rk3588-edgeble-neu6b-io						Armbian	
+rk3588-evb1-v10						Armbian	
+rk3588-friendlyelec-cm3588-nas						Armbian	
+rk3588-jaguar						Armbian	
+rk3588-nanopc-t6						Armbian	
+rk3588-nanopc-t6-lts						Armbian	
+rk3588-ok3588-c						Armbian	
+rk3588-orangepi-5-plus						Armbian	
+rk3588-quartzpro64						Armbian	
+rk3588-rock-5-itx						Armbian	
+rk3588-rock-5b						Armbian	
+rk3588-rock-5b-pcie-ep						Armbian	
+rk3588-rock-5b-pcie-srns						Armbian	
+rk3588-tiger-haikou						Armbian	
+rk3588-toybrick-x0						Armbian	
+rk3588-turing-rk1						Armbian	
+rk3588s-coolpi-4b						Armbian	
+rk3588s-gameforce-ace						Armbian	
+rk3588s-indiedroid-nova						Armbian	
+rk3588s-khadas-edge2						Armbian	
+rk3588s-nanopi-r6c						Armbian	
+rk3588s-nanopi-r6s						Armbian	
+rk3588s-odroid-m2						Armbian	
+rk3588s-orangepi-5						Armbian	
+rk3588s-rock-5a						Armbian	
+RP1	rp1		len323:008c76c3fded	640x480	rk817	dArkOS-arkos4clone	
+RS16	rs16		len370:abc2538808d7	640x480	rk817	dArkOS-arkos4clone	Devices/EE-G80-Panel8,Devices/OkRoll-Clone,Experimental/EE-K36-Panel1,Experimental/EE-V12-Var1-Panel8,Experimental/EE-V12-Var2,Experimental/Kinhank-K36,Experimental/OkRoll-Mux,Experimental/R36S-Y02-Y07,Experimental/XF35H
+RX6H	rx6h		len753:cb15584a55e1	640x480	rk817	andr36oid,dArkOS-arkos4clone,Gamely-Code,stock	Experimental/RX6H
+RX6S-ArkOS			len753:cb15584a55e1	640x480	rk817	Gamely-Code,stock	Experimental/EE-G80-Panel9,Experimental/EE-K36-Panel4,Experimental/EE-V12-Var1-Panel3,Experimental/EE-V12-Var3-Panel3,Experimental/K36S,Experimental/R36T,Experimental/RX6H,rk3326-r36s-clone-k36-panel5
+Soy-Sauce-Panel-1	sauce panel1		len323:eabbd1995483	640x480	rk817	dArkOS-arkos4clone	Devices/G350,Experimental/Soy-Panel5,Experimental/Soy-Panel5-253x,Panels/Panel5
+Soy-Sauce-Panel-2	sauce panel2		len8:8959e0a10c6c	640x480	rk817	dArkOS-arkos4clone	Experimental/Soy-V04-Panel2,Experimental/Soy-V05-Panel2
+Soy-Sauce-Panel-3	sauce panel3		len420:df22e664ca56	640x480	rk817	dArkOS-arkos4clone	Experimental/Soy-V05-2551,Experimental/Soy-V05-2601
+Soy-Sauce-Panel-4	sauce panel4		len755:d8a52c011334	640x480	rk817	dArkOS-arkos4clone	Experimental/KirbX-Clone,Experimental/Soy-Panel6,Panels/Panel6,rk3326-r36s-clone-soysauce-panel6-pmicfix,rk3326-r36s-clone-soysauce-v03
+Soy-Sauce-Panel-5	sauce panel5		len375:a13ac55d80e1	640x480	rk817	dArkOS-arkos4clone	Experimental/R36S-Panel4-Type1,Experimental/Soy-Panel7,Experimental/Soy-Panel7-253x
+soy-sauce-v04			len8:8959e0a10c6c	640x480	rk817	andr36oid-community	Experimental/Soy-V04-Panel2,Experimental/Soy-V05-Panel2
+T16-Max	t16max		len8:6821e5493c30	720x720	rk817	andr36oid,dArkOS-arkos4clone	Experimental/T16-Max
+T16-Max-S600			len768:3e1b8196c1ff	720x720	rk817	andr36oid,ArkOS,stock	Experimental/S600
+U8			len614:f7ce1f89e2da	480x800	rk817	Gamely-Code,stock	
+U8-Panel-1	u8 panel1		len614:f7ce1f89e2da	480x800	rk817	dArkOS-arkos4clone	
+U8-Panel-2	u8 panel2		len604:073a925b1eb7	480x800	rk817	dArkOS-arkos4clone	
+V20-2551	V20 2025-05-18 2551		len370:abc2538808d7	640x480	rk817	stock	Devices/EE-G80-Panel8,Devices/OkRoll-Clone,Experimental/EE-K36-Panel1,Experimental/EE-V12-Var1-Panel8,Experimental/EE-V12-Var2,Experimental/Kinhank-K36,Experimental/OkRoll-Mux,Experimental/R36S-Y02-Y07,Experimental/XF35H
+X55					rk817	Armbian	
+XF28	xf28		len898:bc63104ab4a3	480x640	rk817	dArkOS-arkos4clone	
+XF35H	xf35h		len370:abc2538808d7	640x480	rk817	andr36oid,dArkOS-arkos4clone,stock	Experimental/XF35H
+XF40H	xf40h		len370:9e7bb2a3445b	720x720	rk817	andr36oid,dArkOS-arkos4clone,stock	Experimental/XF40H
+XF40V	xf40v		len370:9e7bb2a3445b	720x720	rk817	dArkOS-arkos4clone	Experimental/R36-Max,Experimental/R36-Ultra,Experimental/S600,Experimental/XF40H,rk3326-r36s-clone-r36max-type2
+XF45V	xf45v		len798:f31ef4f72905	1024x768	rk817	dArkOS-arkos4clone	Experimental/R36-Ultra-X,rk3326-r36s-clone-r36max2
+XGB36	xgb36		len370:abc2538808d7	640x480	rk817	dArkOS-arkos4clone,stock	Devices/EE-G80-Panel8,Devices/OkRoll-Clone,Experimental/EE-K36-Panel1,Experimental/EE-V12-Var1-Panel8,Experimental/EE-V12-Var2,Experimental/Kinhank-K36,Experimental/OkRoll-Mux,Experimental/R36S-Y02-Y07,Experimental/XF35H
+XU-Mini-M					rk817	Armbian,ROCKNIX	
+XU10	xu10		len370:b1037b8dea1f	640x480	rk817	Armbian,dArkOS-arkos4clone,ROCKNIX	Panels/Panel0,rk3326-r50s-v30-b-android
+Y3506-V03-20241104		Y3506_V03_20241104	len375:a13ac55d80e1	640x480	rk817	andr36oid,dArkOSen,dArkOSRE	Experimental/Soy-Panel7
+Y3506-V03-20241210		Y3506_V03_20241210	len375:a13ac55d80e1	640x480	rk817	dArkOSen	Experimental/R36S-Panel4-Type1,Experimental/Soy-Panel7,Experimental/Soy-Panel7-253x
+Y3506-V03-20250317		Y3506_V03_20250317	len755:d8a52c011334	640x480	rk817	andr36oid,dArkOSen,dArkOSRE,stock	Experimental/KirbX-Clone,Experimental/Soy-Panel6
+Y3506-v03-2507	Y3506_V03_20241210 2507; Y3506_v03_20241210 2507	Y3506_v03_20241210 2507	len375:a13ac55d80e1	640x480	rk817	dArkOSRE	Experimental/R36S-Panel4-Type1,Experimental/Soy-Panel7,Experimental/Soy-Panel7-253x
+Y3506-V03-2509	Y3506_V03_20241210 2509		len323:eabbd1995483	640x480	rk817	stock	Devices/G350,Experimental/Soy-Panel5,Experimental/Soy-Panel5-253x,Panels/Panel5
+Y3506-v03-2533	Y3506_V03_20241210 2533; Y3506_v03_20241210 2533	Y3506_v03_20241210 2533	len323:eabbd1995483	640x480	rk817	andr36oid,dArkOSRE	Experimental/Soy-Panel5-253x
+Y3506-V04-2537	Y3506_V04_20250529 2537	Y3506_V04_20250529 2537	len755:d8a52c011334	640x480	rk817	dArkOSen	Experimental/KirbX-Clone,Experimental/Soy-Panel6,Panels/Panel6,rk3326-r36s-clone-soysauce-panel6-pmicfix,rk3326-r36s-clone-soysauce-v03
+Y3506-V04-253x-Panel-6	Y3506_V04_20250529 253x Panel 6	Y3506_V04_20250529 253x Panel 6	len755:d8a52c011334	640x480	rk817	dArkOSRE	Experimental/KirbX-Clone,Experimental/Soy-Panel6,Panels/Panel6,rk3326-r36s-clone-soysauce-panel6-pmicfix,rk3326-r36s-clone-soysauce-v03
+Y3506-V04-253x-Panel-7	Y3506_V04_20250529 253x Panel 7	Y3506_V04_20250529 253x Panel 7	len375:a13ac55d80e1	640x480	rk817	andr36oid,dArkOSRE	Experimental/Soy-Panel7-253x
+Y3506-V04-2548	Y3506_V04_20250529 2548	Y3506_V04_20250529 2548	len755:d8a52c011334	640x480	rk817	dArkOSen,dArkOSRE,stock	Experimental/KirbX-Clone,Experimental/Soy-Panel6,Panels/Panel6,rk3326-r36s-clone-soysauce-panel6-pmicfix,rk3326-r36s-clone-soysauce-v03
+Y3506-V04-2548-Panel-2	Y3506_V04_20250529 2548 Panel 2	Y3506_V04_20250529 2548 Panel 2	len8:8959e0a10c6c	640x480	rk817	andr36oid,dArkOSRE	Experimental/Soy-V04-Panel2
+Y3506-V05-2551	Y3506_V05_20251215 2551	Y3506_V05_20251215 2551	len323:eabbd1995483	640x480	rk817	andr36oid,dArkOSen,dArkOSRE,stock	Experimental/Soy-Panel5,Experimental/Soy-V05-2551
+Y3506-V05-2601	Y3506_V05_20251215 2601	Y3506_V05_20251215 2601	len420:df22e664ca56	640x480	rk817	andr36oid,dArkOSen,dArkOSRE,stock	Experimental/Soy-V05-2601,Experimental/Soy-V05-Panel2
+Y3506-V06-2604	Y3506_V06_20260120 2604		len375:43076e134b5d	640x480	rk817	stock	

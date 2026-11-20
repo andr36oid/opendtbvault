@@ -1,0 +1,278 @@
+/dts-v1/;
+
+/ {
+	compatible = "rockchip,rg351mp\0rockchip,rk3326";
+	#address-cells = <0x02>;
+	#size-cells = <0x02>;
+	model = "Rockchip RK3326 RG351 Series";
+
+	aliases {
+		serial2 = "/serial@ff160000";
+		spi0 = "/spi@ff1d0000";
+		mmc0 = "/dwmmc@ff390000";
+		mmc1 = "/dwmmc@ff370000";
+	};
+
+	syscon@ff010000 {
+		compatible = "rockchip,px30-pmugrf\0syscon\0simple-mfd";
+		reg = <0x00 0xff010000 0x00 0x1000>;
+		#address-cells = <0x01>;
+		#size-cells = <0x01>;
+		u-boot,dm-pre-reloc;
+		phandle = <0xa1>;
+	};
+
+	crypto@ff0b0000 {
+		compatible = "rockchip,px30-crypto";
+		reg = <0x00 0xff0b0000 0x00 0x4000>;
+		interrupts = <0x00 0x52 0x04>;
+		clocks = <0x02 0xac 0x02 0xf1 0x02 0x30 0x02 0x31>;
+		clock-names = "aclk\0hclk\0sclk\0apb_pclk";
+		resets = <0x02 0x74>;
+		reset-names = "crypto-rst";
+		status = "disabled";
+		u-boot,dm-pre-reloc;
+	};
+
+	serial@ff160000 {
+		compatible = "rockchip,px30-uart\0snps,dw-apb-uart";
+		reg = <0x00 0xff160000 0x00 0x100>;
+		interrupts = <0x00 0x11 0x04>;
+		clocks = <0x02 0x19 0x02 0x14a>;
+		clock-names = "baudclk\0apb_pclk";
+		reg-shift = <0x02>;
+		reg-io-width = <0x04>;
+		dmas = <0x25 0x04 0x25 0x05>;
+		status = "okay";
+		clock-frequency = <0x16e3600>;
+		u-boot,dm-pre-reloc;
+	};
+
+	spi@ff1d0000 {
+		compatible = "rockchip,px30-spi\0rockchip,rk3066-spi";
+		reg = <0x00 0xff1d0000 0x00 0x1000>;
+		interrupts = <0x00 0x1a 0x04>;
+		#address-cells = <0x01>;
+		#size-cells = <0x00>;
+		clocks = <0x02 0x24 0x02 0x155>;
+		clock-names = "spiclk\0apb_pclk";
+		dmas = <0x25 0x0c 0x25 0x0d>;
+		dma-names = "tx\0rx";
+		pinctrl-1 = <0x65 0x62 0x66 0x67>;
+		status = "disabled";
+		u-boot,dm-pre-reloc;
+	};
+
+	saradc@ff288000 {
+		compatible = "rockchip,px30-saradc\0rockchip,rk3399-saradc";
+		reg = <0x00 0xff288000 0x00 0x100>;
+		interrupts = <0x00 0x54 0x04>;
+		#io-channel-cells = <0x01>;
+		clocks = <0x02 0x2d 0x02 0x157>;
+		clock-names = "saradc\0apb_pclk";
+		resets = <0x02 0xa5>;
+		reset-names = "saradc-apb";
+		status = "okay";
+		u-boot,dm-pre-reloc;
+	};
+
+	clock-controller@ff2b0000 {
+		compatible = "rockchip,px30-cru";
+		reg = <0x00 0xff2b0000 0x00 0x1000>;
+		rockchip,grf = <0x29>;
+		rockchip,boost = <0x7b>;
+		#clock-cells = <0x01>;
+		#reset-cells = <0x01>;
+		u-boot,dm-pre-reloc;
+		phandle = <0x02>;
+	};
+
+	pmu-clock-controller@ff2bc000 {
+		compatible = "rockchip,px30-pmucru";
+		reg = <0x00 0xff2bc000 0x00 0x1000>;
+		rockchip,grf = <0x29>;
+		#clock-cells = <0x01>;
+		#reset-cells = <0x01>;
+		u-boot,dm-pre-reloc;
+		phandle = <0x24>;
+	};
+
+	syscon@ff2c0000 {
+		compatible = "rockchip,px30-usb2phy-grf\0syscon\0simple-mfd";
+		reg = <0x00 0xff2c0000 0x00 0x10000>;
+		#address-cells = <0x01>;
+		#size-cells = <0x01>;
+		u-boot,dm-pre-reloc;
+		status = "okay";
+
+		usb2-phy@100 {
+			compatible = "rockchip,px30-usb2phy\0rockchip,rk3328-usb2phy";
+			reg = <0x100 0x10>;
+			clocks = <0x24 0x0a>;
+			clock-names = "phyclk";
+			#clock-cells = <0x00>;
+			clock-output-names = "usb480m_phy";
+			status = "okay";
+			u-boot,dm-pre-reloc;
+			phandle = <0x7c>;
+
+			otg-port {
+				#phy-cells = <0x00>;
+				interrupts = <0x00 0x42 0x04 0x00 0x41 0x04 0x00 0x40 0x04>;
+				interrupt-names = "otg-bvalid\0otg-id\0linestate";
+				status = "disabled";
+				u-boot,dm-pre-reloc;
+				phandle = <0x7e>;
+			};
+		};
+	};
+
+	usb@ff300000 {
+		compatible = "rockchip,px30-usb\0rockchip,rk3066-usb\0snps,dwc2";
+		reg = <0x00 0xff300000 0x00 0x40000>;
+		interrupts = <0x00 0x3e 0x04>;
+		clocks = <0x02 0x102>;
+		clock-names = "otg";
+		power-domains = <0x7d 0x05>;
+		dr_mode = "otg";
+		g-np-tx-fifo-size = <0x10>;
+		g-rx-fifo-size = <0x118>;
+		g-tx-fifo-size = <0x100 0x80 0x80 0x40 0x20 0x10>;
+		g-use-dma;
+		phys = <0x7e>;
+		phy-names = "usb2-phy";
+		status = "okay";
+		u-boot,dm-pre-reloc;
+	};
+
+	dwmmc@ff370000 {
+		compatible = "rockchip,px30-dw-mshc\0rockchip,rk3288-dw-mshc";
+		reg = <0x00 0xff370000 0x00 0x4000>;
+		max-frequency = <0x8f0d180>;
+		clocks = <0x02 0xf7 0x02 0x3b 0x02 0x43 0x02 0x44>;
+		clock-names = "biu\0ciu\0ciu-drv\0ciu-sample";
+		power-domains = <0x7d 0x07>;
+		fifo-depth = <0x100>;
+		interrupts = <0x00 0x36 0x04>;
+		status = "okay";
+		u-boot,dm-pre-reloc;
+		bus-width = <0x04>;
+		cap-mmc-highspeed;
+		cap-sd-highspeed;
+		supports-sd;
+		card-detect-delay = <0x4b0>;
+		ignore-pm-notify;
+		cd-gpios = <0x59 0x03 0x01>;
+		sd-uhs-sdr12;
+		sd-uhs-sdr25;
+		sd-uhs-sdr50;
+		sd-uhs-sdr104;
+		vqmmc-supply = <0x86>;
+		vmmc-supply = <0x87>;
+	};
+
+	dwmmc@ff390000 {
+		compatible = "rockchip,px30-dw-mshc\0rockchip,rk3288-dw-mshc";
+		reg = <0x00 0xff390000 0x00 0x4000>;
+		max-frequency = <0x8f0d180>;
+		clocks = <0x02 0x100 0x02 0x39 0x02 0x47 0x02 0x48>;
+		clock-names = "biu\0ciu\0ciu-drv\0ciu-sample";
+		power-domains = <0x7d 0x0a>;
+		fifo-depth = <0x100>;
+		interrupts = <0x00 0x35 0x04>;
+		status = "okay";
+		u-boot,dm-pre-reloc;
+		bus-width = <0x08>;
+		cap-mmc-highspeed;
+		non-removable;
+	};
+
+	nandc@ff3b0000 {
+		compatible = "rockchip,rk-nandc";
+		reg = <0x00 0xff3b0000 0x00 0x4000>;
+		interrupts = <0x00 0x39 0x04>;
+		nandc_id = <0x00>;
+		clocks = <0x02 0x37 0x02 0xfe>;
+		clock-names = "clk_nandc\0hclk_nandc";
+		power-domains = <0x7d 0x0a>;
+		status = "disabled";
+		u-boot,dm-pre-reloc;
+	};
+
+	sfc@ff3a0000 {
+		compatible = "rockchip,rksfc";
+		reg = <0x00 0xff3a0000 0x00 0x4000>;
+		interrupts = <0x00 0x38 0x04>;
+		clocks = <0x02 0x3a 0x02 0x101>;
+		clock-names = "clk_sfc\0hclk_sfc";
+		status = "okay";
+		u-boot,dm-pre-reloc;
+	};
+
+	dmc {
+		compatible = "rockchip,px30-dmc\0syscon";
+		reg = <0x00 0xff2a0000 0x00 0x1000>;
+		u-boot,dm-pre-reloc;
+		phandle = <0xa0>;
+	};
+
+	pinctrl {
+
+		gpio0@ff040000 {
+			compatible = "rockchip,gpio-bank";
+			reg = <0x00 0xff040000 0x00 0x100>;
+			interrupts = <0x00 0x03 0x04>;
+			clocks = <0x24 0x14>;
+			gpio-controller;
+			#gpio-cells = <0x02>;
+			interrupt-controller;
+			#interrupt-cells = <0x02>;
+			u-boot,dm-pre-reloc;
+			status = "disabled";
+			phandle = <0x59>;
+		};
+
+		gpio1@ff250000 {
+			compatible = "rockchip,gpio-bank";
+			reg = <0x00 0xff250000 0x00 0x100>;
+			interrupts = <0x00 0x04 0x04>;
+			clocks = <0x02 0x15c>;
+			gpio-controller;
+			#gpio-cells = <0x02>;
+			interrupt-controller;
+			#interrupt-cells = <0x02>;
+			u-boot,dm-pre-reloc;
+			status = "disabled";
+		};
+
+		gpio2@ff260000 {
+			compatible = "rockchip,gpio-bank";
+			reg = <0x00 0xff260000 0x00 0x100>;
+			interrupts = <0x00 0x05 0x04>;
+			clocks = <0x02 0x15d>;
+			gpio-controller;
+			#gpio-cells = <0x02>;
+			interrupt-controller;
+			#interrupt-cells = <0x02>;
+			u-boot,dm-pre-reloc;
+			status = "disabled";
+		};
+
+		gpio3@ff270000 {
+			compatible = "rockchip,gpio-bank";
+			reg = <0x00 0xff270000 0x00 0x100>;
+			interrupts = <0x00 0x06 0x04>;
+			clocks = <0x02 0x15e>;
+			gpio-controller;
+			#gpio-cells = <0x02>;
+			interrupt-controller;
+			#interrupt-cells = <0x02>;
+			u-boot,dm-pre-reloc;
+			status = "disabled";
+		};
+	};
+
+	chosen {
+		stdout-path = "/serial@ff160000";
+	};
+};

@@ -1,0 +1,16 @@
+/dts-v1/;
+
+/ {
+
+	fragment@0 {
+		target = <0xffffffff>;
+
+		__overlay__ {
+			rockchip,rx-common-refclk-mode = <0x00 0x00 0x00 0x00>;
+		};
+	};
+
+	__fixups__ {
+		pcie30phy = "/fragment@0:target:0";
+	};
+};

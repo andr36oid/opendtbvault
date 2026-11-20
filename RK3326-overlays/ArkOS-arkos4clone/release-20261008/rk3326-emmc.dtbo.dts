@@ -1,0 +1,26 @@
+/dts-v1/;
+
+/ {
+
+	fragment@0 {
+		target-path = "/dwmmc@ff390000";
+
+		__overlay__ {
+			bus-width = <0x08>;
+			cap-mmc-highspeed;
+			supports-emmc;
+			non-removable;
+			disable-wp;
+			num-slots = <0x01>;
+			pinctrl-names = "default";
+			pinctrl-0 = <0xffffffff 0xffffffff 0xffffffff>;
+			status = "okay";
+		};
+	};
+
+	__fixups__ {
+		emmc_clk = "/fragment@0/__overlay__:pinctrl-0:0";
+		emmc_cmd = "/fragment@0/__overlay__:pinctrl-0:4";
+		emmc_bus8 = "/fragment@0/__overlay__:pinctrl-0:8";
+	};
+};

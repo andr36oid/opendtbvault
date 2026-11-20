@@ -1,0 +1,36 @@
+/dts-v1/;
+
+/ {
+
+	fragment@0 {
+		target = <0xffffffff>;
+
+		__overlay__ {
+			rockchip,rx-common-refclk-mode = <0x00 0x00 0x00 0x00>;
+		};
+	};
+
+	fragment@1 {
+		target = <0xffffffff>;
+
+		__overlay__ {
+			status = "disabled";
+		};
+	};
+
+	fragment@2 {
+		target = <0xffffffff>;
+
+		__overlay__ {
+			vpcie3v3-supply = <0xffffffff>;
+			status = "okay";
+		};
+	};
+
+	__fixups__ {
+		pcie30phy = "/fragment@0:target:0";
+		pcie3x4 = "/fragment@1:target:0";
+		pcie3x4_ep = "/fragment@2:target:0";
+		vcc3v3_pcie30 = "/fragment@2/__overlay__:vpcie3v3-supply:0";
+	};
+};

@@ -1,0 +1,72 @@
+/dts-v1/;
+
+/ {
+
+	fragment@0 {
+		target-path = "/i2c@ff180000/pmic@20/regulators/DCDC_REG1";
+
+		__overlay__ {
+			regulator-max-microvolt = <0x155cc0>;
+		};
+	};
+
+	fragment@1 {
+		target-path = "/i2c@ff180000/pmic@20/regulators/DCDC_REG2";
+
+		__overlay__ {
+			regulator-max-microvolt = <0x155cc0>;
+		};
+	};
+
+	fragment@2 {
+		target-path = "/gpu-opp-table";
+
+		__overlay__ {
+			rockchip,max-volt = <0x1437c8>;
+
+			opp-600000000 {
+				opp-hz = <0x00 0x23c34600>;
+				opp-microvolt = <0x13d620>;
+				opp-microvolt-L0 = <0x13d620>;
+				opp-microvolt-L1 = <0x13d620>;
+				opp-microvolt-L2 = <0x13d620>;
+				opp-microvolt-L3 = <0x13d620>;
+			};
+
+			opp-640000000 {
+				opp-hz = <0x00 0x2625a000>;
+				opp-microvolt = <0x13d620>;
+				opp-microvolt-L0 = <0x13d620>;
+				opp-microvolt-L1 = <0x13d620>;
+				opp-microvolt-L2 = <0x13d620>;
+				opp-microvolt-L3 = <0x13d620>;
+			};
+		};
+	};
+
+	fragment@3 {
+		target-path = "/dmc-opp-table";
+
+		__overlay__ {
+			rockchip,max-volt = <0x1437c8>;
+
+			opp-924000000 {
+				opp-hz = <0x00 0x37131f00>;
+				opp-microvolt = <0x13d620>;
+				opp-microvolt-L0 = <0x13d620>;
+				opp-microvolt-L1 = <0x13d620>;
+				opp-microvolt-L2 = <0x13d620>;
+				opp-microvolt-L3 = <0x13d620>;
+			};
+
+			opp-1040000000 {
+				opp-hz = <0x00 0x3dfd2400>;
+				opp-microvolt = <0x13d620>;
+				opp-microvolt-L0 = <0x13d620>;
+				opp-microvolt-L1 = <0x13d620>;
+				opp-microvolt-L2 = <0x13d620>;
+				opp-microvolt-L3 = <0x13d620>;
+			};
+		};
+	};
+};
